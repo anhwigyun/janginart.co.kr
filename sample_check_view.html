@@ -1,0 +1,658 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="robots" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">  
+	<meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover">
+	<link href="" rel="icon" type="image/jpg">
+	<link href="" rel="shortcut icon" type="image/jpg">
+	<link href="" rel="apple-touch-icon" type="image/jpg">				
+	<link rel="stylesheet" type="text/css" href="./asset/css/swiper.min.css"> 
+	<link rel="stylesheet" type="text/css" href="./asset/css/base.css"> 
+	<link rel="stylesheet" type="text/css" href="./asset/css/grid.css"> 
+	<link rel="stylesheet" type="text/css" href="./asset/css/common.css?a=1"> 
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="./asset/js/swiper.min.js"></script>	
+	<script src="./asset/js/common.js"></script>
+</head>
+<body>
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="header-top-logo">
+					<h1><a href=""><img src="./asset/images/logo.png"></a></h1>
+				</div>
+				<div class="header-top-member">
+					<ul>
+						<li><a href="">로그인</a></li>
+						<li><a href="">회원가입</a></li>
+						<li><a href="">검색</a></li>
+						<li><a href="">장바구니</a></li>
+						<li><a href="">마이페이지<span>시안확인</span></a></li>
+					</ul>
+					<a href="javascript:;" onclick="menuOpen();" class="menu">메뉴바</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="header-bottom-cate">
+					<a href="javascript:;" class="all" onclick="menuOpen();">전체 카테고리</a>
+					<ul>
+						<li><a href="">감사패</a></li>
+						<li><a href="">트로피</a></li>
+						<li><a href="">싱글패</a></li>
+						<li><a href="">이글패</a></li>
+						<li><a href="">홀인원</a></li>
+						<li><a href="">교회</a></li>
+						<li><a href="">명패</a></li>
+						<li><a href="">기타</a></li>
+					</ul>
+				</div>
+				<div class="header-bottom-link">
+					<ul>
+						<li><a href="">견적상담</a></li>
+						<li><a href="">주문서 다운로드</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header-fixed">
+			<div class="box">
+				<div class="header-fixed-button">
+					<a href="javascript:;" onclick="rightToggle();">토글</a>
+				</div>
+				<div class="header-fixed-body">
+					<h2>주문도우미</h2>
+					<div class="fixed-body-cate">
+						<ul>
+							<li><a href=""><p>문구추천</p></a></li>
+							<li><a href=""><p>장바구니</p></a></li>
+							<li><a href=""><p>맞춤결제</p></a></li>
+							<li><a href=""><p>카드증빙</p></a></li>
+							<li><a href=""><p>배송조회</p></a></li>
+							<li class="kakao"><a href=""><p>실시간 문의</p></a></li>
+						</ul>
+					</div>
+					<div class="fixed-body-cs">
+						<strong>0000-0000</strong>
+						<p>장인의상패@이메일</p>
+						<small>월요일 - 금요일 09:00~18:00</small>
+						<small>토/일/공휴일은 휴무입니다</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-all">
+			<div class="box">
+				<div class="all-head">
+					<a href="javascript:;" onclick="menuClose();">닫기</a>
+				</div>
+				<div class="all-body">
+					<div class="all-body-member">
+						<ul>
+							<li><a href="">로그인</a></li>
+							<li><a href="">회원가입</a></li>
+							<li><a href="">검색</a></li>
+							<li><a href="">장바구니</a></li>
+							<li><a href="">마이페이지</a></li>
+						</ul>
+					</div>
+					<div class="all-body-cate">
+						<h2>카테고리</h2>
+						<ul>
+							<li><a href="">감사패</a></li>
+							<li><a href="">트로피</a></li>
+							<li><a href="">싱글패</a></li>
+							<li><a href="">이글패</a></li>
+							<li><a href="">홀인원</a></li>
+							<li><a href="">교회</a></li>
+							<li><a href="">명패</a></li>
+							<li><a href="">기타</a></li>
+							<li><a href="">견적상담</a></li>
+							<li><a href="">주문서 다운로드</a></li>
+						</ul>
+					</div>
+					<div class="all-body-my">
+						<h2>언더독 님</h2>
+						<ul>
+							<li>
+								<a href="">쇼핑정보</a>
+								<button type="button">쇼핑정보</button>
+								<dl>
+									<dd><a href="">주문내역/배송조회</a></dd>
+									<dd><a href="">시안확인</a></dd>
+									<dd><a href="">장바구니</a></dd>
+									<dd><a href="">취소/교환 내역</a></dd>
+									<dd><a href="">나의 리뷰</a></dd>
+								</dl>
+							</li>
+							<li>
+								<a href="">내 정보</a>
+								<button type="button">내 정보</button>
+								<dl>
+									<dd><a href="">회원정보수정</a></dd>
+									<dd><a href="">배송지관리</a></dd>
+									<dd><a href="">포인트/쿠폰</a></dd>
+								</dl>
+							</li>
+							<li>
+								<a href="">고객센터</a>
+								<button type="button">고객센터</button>
+								<dl>
+									<dd><a href="">문의내역</a></dd>
+									<dd><a href="">자주묻는질문</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container sm">
+			<div class="mypage-box">
+				<div class="mypage-right">
+					<div class="table-box">
+						<div class="table-head">
+							<div class="title-box">
+								<h2>시안확인</h2>
+							</div>
+							<div class="button-box">
+								<a href="" class="btn btn-black sm">마이페이지</a>
+							</div>
+						</div>
+						<div class="table-body">
+							<table>
+								<thead>
+									<tr>
+										<th>주문일자</th>
+										<th class="subject">상품정보</th>
+										<th>고객명</th>
+										<th>진행상태</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2024.00.00</td>
+										<td class="subject">
+											<div class="table-image-box lg">
+												<a href="" class="inner">
+													<div class="image">
+														<img src="./asset/images/img_table_image.png">
+													</div>
+													<div class="content">
+														<p>크리스탈 명패 UN2839</p>
+														<dl>
+															<dd>스틸(기본)</dd>
+															<dd>230,000원</dd>
+														</dl>
+													</div>
+												</a>
+											</div>
+										</td>
+										<td>언더독</td>
+										<td>시안제작완료</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="sample-box mt64 mt-lg-40">
+						<div class="sample-head">
+							<h2>상품 시안</h2>
+							<p>선호하시는 시안을 클릭 후 확정해주세요. 원하시는 시안이 없으실 경우 시안수정 요청을 하실 수 있습니다.</p>
+						</div>
+						<div class="sample-body">
+							<div class="sample-body-list">
+								<ul>
+									<li>
+										<div class="list-image">
+											<img src="./asset/images/img_sample_image_01.png">
+										</div>
+										<div class="list-content">
+											<div class="button-box">
+												<a href="javascript:;" onclick="popupOpen('popup01');" class="btn btn-bd-blue sm">시안 선택</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="list-image">
+											<img src="./asset/images/img_sample_image_01.png">
+										</div>
+										<div class="list-content">
+											<div class="button-box">
+												<a href="javascript:;" onclick="popupOpen('popup01');" class="btn btn-bd-yellow sm">시안 선택</a>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="sample-body-comment">
+								<ul>
+									<li>
+										<p>내용이 너무 길어 모든 글을 상패에 표현하기 적절하지 않습니다.</p>
+										<time>2024.00.00</time>
+									</li>
+									<li>
+										<p>해당문구는 받는 분에게 민감한 내용이 될 수 있습니다.</p>
+										<time>2024.00.00</time>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="sample-foot">
+							<a href="">확정</a>
+						</div>
+					</div>
+					<div class="mt24">
+						<div class="title-box mb16">
+							<h2>시안수정 요청</h2>
+							<p>요청하시는 내용을 상세하게 작성해주세요. </p>
+						</div>
+						<div class="textarea-box">
+							<textarea placeholder="시안수정 시 요청사항을 작성해주세요."></textarea>
+							<div class="button-box">
+								<a href="" class="btn btn-bd-black">등록</a>
+							</div>
+						</div>
+					</div>
+					<div class="table-box no-border mt56 mt-lg-30">
+						<div class="table-body">
+							<table>	
+								<thead>
+									<tr>
+										<th>작성자</th>
+										<th>내용</th>
+										<th>작성일자</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>관리자</td>
+										<td><a href="" class="subject">교환접수 어떻게하나요?</a></td>
+										<td>2024.00.00 00:00:00</td>
+									</tr>
+									<tr>
+										<td>관리자</td>
+										<td><a href="" class="subject">교환접수 어떻게하나요?</a></td>
+										<td>2024.00.00 00:00:00</td>
+									</tr>
+									<tr>
+										<td>관리자</td>
+										<td><a href="" class="subject">교환접수 어떻게하나요?</a></td>
+										<td>2024.00.00 00:00:00</td>
+									</tr>
+									<tr>
+										<td>관리자</td>
+										<td><a href="" class="subject">교환접수 어떻게하나요?</a></td>
+										<td>2024.00.00 00:00:00</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="mt64 mt-lg-30">
+						<div class="title-box mb16">
+							<h2>요청사항</h2>
+						</div>
+						<div class="request-list-box">
+							<div class="list-head">
+								<div class="mo-hide">주문사항</div>
+								<div class="subject">문의제목</div>
+								<div class="mo-hide">작성일</div>
+								<div>답변</div>
+							</div>
+							<div class="list-body">
+								<ul>
+									<li>
+										<div class="mo-hide">파일첨부</div>
+										<div class="subject">
+											<div class="subject-text">
+												<p>
+													설마 공이 바로 들어갈 것이라고는 생각못했지요. 깃대 옆에 예쁘게 안착해 있을 것이라고만 생각했지. 레이크힐스 순천C.C. 루비코스 6번홀(파4)에서의 일입니다. 우리의 박정수 선수 투어스테이지 센드웨지로 칩샷을 성공했습니다. 무더위를 날리는 쾌거였습니다. 파4홀 이글은 타이거 우즈나 하는 건 줄 알았는데.. 이글을 축하합니다.
+												</p>
+											</div>
+											<div class="subject-file">
+												<a href=""><p>파일명</p></a>
+											</div>
+										</div>
+										<div class="mo-hide">2024.00.00</div>
+										<div class="fw7">답변완료</div>
+									</li>
+									<li>
+										<div class="mo-hide">파일첨부</div>
+										<div class="subject">
+											<div class="subject-text">
+												<p>
+													설마 공이 바로 들어갈 것이라고는 생각못했지요. 깃대 옆에 예쁘게 안착해 있을 것이라고만 생각했지. 레이크힐스 순천C.C. 루비코스 6번홀(파4)에서의 일입니다. 우리의 박정수 선수 투어스테이지 센드웨지로 칩샷을 성공했습니다. 무더위를 날리는 쾌거였습니다. 파4홀 이글은 타이거 우즈나 하는 건 줄 알았는데.. 이글을 축하합니다.
+												</p>
+											</div>
+											<div class="subject-file">
+												<a href=""><p>파일명</p></a>
+											</div>
+										</div>
+										<div class="mo-hide">2024.00.00</div>
+										<div class="fw7">답변완료</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="gray-box mt80 mt-lg-50">
+			<div class="container sm">
+				<div class="title-box">
+					<h2>주문상세</h2>
+				</div>
+				<div class="step-box">
+					<ul>
+						<li><a href="">주문완료</a></li>
+						<li><a href="">시안작업</a></li>
+						<li class="active"><a href="">시안확인요청</a></li>
+						<li><a href="">상품제작</a></li>
+						<li><a href="">출고완료</a></li>
+					</ul>
+				</div>
+				<div class="table-box mt40 mt-lg-30">
+					<div class="table-body">
+						<table>
+							<thead>
+								<tr>
+									<th class="subject">상품정보</th>
+									<th>행사/요청일</th>
+									<th>수량</th>
+									<th>주문금액</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="subject">
+										<div class="table-image-box lg">
+											<a href="" class="inner">
+												<div class="image">
+													<img src="./asset/images/img_table_image.png">
+												</div>
+												<div class="content">
+													<p>크리스탈 명패 UN2839</p>
+													<dl>
+														<dd>스틸(기본)</dd>
+														<dd>230,000원</dd>
+													</dl>
+												</div>
+											</a>
+										</div>
+									</td>
+									<td>
+										2024.00.00
+										<a href="" class="link">일자변경</a>
+									</td>
+									<td class="fw7">1</td>
+									<td class="fw7">230,000원</td>
+								</tr>
+								<tr>
+									<td class="subject">
+										<div class="table-image-box lg">
+											<a href="" class="inner">
+												<div class="image">
+													<img src="./asset/images/img_table_image.png">
+												</div>
+												<div class="content">
+													<p>크리스탈 명패 UN2839</p>
+													<dl>
+														<dd>스틸(기본)</dd>
+														<dd>230,000원</dd>
+													</dl>
+												</div>
+											</a>
+										</div>
+									</td>
+									<td>
+										2024.00.00
+										<a href="" class="link">일자변경</a>
+									</td>
+									<td class="fw7">1</td>
+									<td class="fw7">230,000원</td>
+								</tr>
+								<tr>
+									<td class="subject">
+										<div class="table-image-box lg">
+											<a href="" class="inner">
+												<div class="image">
+													<img src="./asset/images/img_table_image.png">
+												</div>
+												<div class="content">
+													<p>크리스탈 명패 UN2839</p>
+													<dl>
+														<dd>스틸(기본)</dd>
+														<dd>230,000원</dd>
+													</dl>
+												</div>
+											</a>
+										</div>
+									</td>
+									<td>
+										2024.00.00
+										<a href="" class="link">일자변경</a>
+									</td>
+									<td class="fw7">1</td>
+									<td class="fw7">230,000원</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="flex mt64 mt-lg-32">
+					<div class="flex-1 flex-lg-0 col-lg-12 mr50">
+						<div class="title-box mb16">
+							<h2>주문자 정보</h2>
+						</div>
+						<div class="table-text-box">
+							<ul>
+								<li>
+									<b>주문자 명</b>
+									<div>
+										<p>언더독</p>
+									</div>
+								</li>
+								<li>
+									<b>휴대폰</b>
+									<div>
+										<p>010-1234-1234</p>
+									</div>
+								</li>
+								<li>
+									<b>주소</b>
+									<div>
+										<p>서울특별시 용산구 한강대로 405 401호</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="flex-1 col-lg-12 mt-lg-24">
+						<div class="title-box mb16">
+							<h2>수취인 정보</h2>
+						</div>
+						<div class="table-text-box">
+							<ul>
+								<li>
+									<b>수취인 명</b>
+									<div>
+										<p>언더독</p>
+									</div>
+								</li>
+								<li>
+									<b>휴대폰</b>
+									<div>
+										<p>010-1234-1234</p>
+									</div>
+								</li>
+								<li>
+									<b>주소</b>
+									<div>
+										<p>서울특별시 용산구 한강대로 405 401호</p>
+									</div>
+								</li>
+								<li>
+									<b>배송시 요청사항</b>
+									<div>
+										<p>-</p>
+									</div>
+								</li>
+								<li>
+									<b>택배 방법</b>
+									<div>
+										<p>퀵</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="title-box mt64 mt-lg-32 mb16">
+					<h2>결제 정보</h2>
+				</div>
+				<div class="order-price-box">
+					<div class="list">
+						<ul>
+							<li>
+								<div class="price-list">
+									<dl>
+										<dd>
+											<b>주문금액</b>
+											<div>
+												<p>1,760,000원</p>
+											</div>
+										</dd>
+										<dd>
+											<b>상품할인</b>
+											<div>
+												<p>880,000원</p>
+											</div>
+										</dd>
+										<dd>
+											<b class="point">마일리지</b>
+											<div>
+												<p><b>-10,000원</b></p>
+											</div>
+										</dd>
+										<dd>
+											<b class="coupon">신규고객 10%할인 쿠폰</b>
+											<div>
+												<p><b>-56,000원</b></p>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<div class="price-total">
+									<strong>결제금액</strong>
+									<div>
+										<b>880,000원</b>
+										<dl>
+											<dd>카드결제</dd>
+											<dd>국민카드</dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="mt32 mt-lg-15 flex flex-vc flex-tr">
+					<div class="button-box">
+						<a href="" class="btn btn-bd-black mr4">주문내역서</a>
+						<a href="" class="btn btn-bd-black mr4">영수증출력</a>
+						<a href="" class="btn btn-bd-black mr4">세금계산서</a>
+						<a href="" class="btn btn-bd-black">현금영수증</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup-box">
+			<div class="box alert" data-name="popup01">
+				<div class="popup-head">
+					<a href="javascript:;" onclick="popupClose();">닫기</a>
+				</div>
+				<div class="popup-body">
+					<div class="popup-body-text">
+						<h2>정말로 시안을 확정하시겠습니까?</h2>
+						<p>시안 확정 후에는 제작이 진행되므로 수정이 불가합니다.</p>
+					</div>
+					<div class="button-box">
+						<a href="javascript:;" onclick="popupClose();" class="btn btn-bd-lightgray mr12 mr-lg-8 sm">취소</a>
+						<a href="" class="btn btn-black sm">문구변경</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer-top">
+				<div class="footer-top-left">
+					<h2><img src="./asset/images/logo.png"></h2>
+					<ul>
+						<li><a href="">주문방법</a></li>
+						<li><a href="">제작기간</a></li>
+						<li><a href="">케이스</a></li>
+						<li><a href="">문구추천</a></li>
+						<li><a href="">질문과답변</a></li>
+					</ul>
+				</div>
+				<div class="footer-top-center">
+					<div class="top-center-cate">
+						<ul>
+							<li><a href="">이용약관</a></li>
+							<li><a href="">개인정보처리방침</a></li>
+							<li><a href="">자주묻는질문</a></li>
+							<li><a href="">견적요청</a></li>
+							<li><a href="">주문서받기</a></li>
+						</ul>
+					</div>
+					<div class="top-center-info">
+						<ul>
+							<li>회사명 : 언더독</li>
+							<li>대표자명 : 김수철</li>
+							<li>주소 : 서울특별시 중구 마른내로 61-1, 2층 206호(안현동1가)</li>
+							<li>사업자 등록번호 : </li>
+							<li>통신판매번호 2023-서울강동-0202</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-top-right">
+					<strong>0000-0000</strong>
+					<p>장인의상패@이메일</p>
+					<small>월요일 - 금요일 09:00~18:00</small>
+					<small>토/일/공휴일은 휴무입니다</small>
+					<ul>
+						<li class="blog"><a href="" target="_blank">블로그</a></li>
+						<li class="instagram"><a href="" target="_blank">인스타그램</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>Copyright 언더독 컴퍼니.All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<script src="./asset/js/swiper.js"></script>
+</body>
+</html>

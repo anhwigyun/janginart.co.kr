@@ -1,0 +1,528 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="robots" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">  
+	<meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover">
+	<link href="" rel="icon" type="image/jpg">
+	<link href="" rel="shortcut icon" type="image/jpg">
+	<link href="" rel="apple-touch-icon" type="image/jpg">				
+	<link rel="stylesheet" type="text/css" href="./asset/css/swiper.min.css"> 
+	<link rel="stylesheet" type="text/css" href="./asset/css/base.css"> 
+	<link rel="stylesheet" type="text/css" href="./asset/css/grid.css"> 
+	<link rel="stylesheet" type="text/css" href="./asset/css/common.css?a=1"> 
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="./asset/js/swiper.min.js"></script>	
+	<script src="./asset/js/common.js"></script>
+</head>
+<body>
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="header-top-logo">
+					<h1><a href=""><img src="./asset/images/logo.png"></a></h1>
+				</div>
+				<div class="header-top-member">
+					<ul>
+						<li><a href="">로그인</a></li>
+						<li><a href="">회원가입</a></li>
+						<li><a href="">검색</a></li>
+						<li><a href="">장바구니</a></li>
+						<li><a href="">마이페이지<span>시안확인</span></a></li>
+					</ul>
+					<a href="javascript:;" onclick="menuOpen();" class="menu">메뉴바</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="header-bottom-cate">
+					<a href="javascript:;" class="all" onclick="menuOpen();">전체 카테고리</a>
+					<ul>
+						<li><a href="">감사패</a></li>
+						<li><a href="">트로피</a></li>
+						<li><a href="">싱글패</a></li>
+						<li><a href="">이글패</a></li>
+						<li><a href="">홀인원</a></li>
+						<li><a href="">교회</a></li>
+						<li><a href="">명패</a></li>
+						<li><a href="">기타</a></li>
+					</ul>
+				</div>
+				<div class="header-bottom-link">
+					<ul>
+						<li><a href="">견적상담</a></li>
+						<li><a href="">주문서 다운로드</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header-fixed">
+			<div class="box">
+				<div class="header-fixed-button">
+					<a href="javascript:;" onclick="rightToggle();">토글</a>
+				</div>
+				<div class="header-fixed-body">
+					<h2>주문도우미</h2>
+					<div class="fixed-body-cate">
+						<ul>
+							<li><a href=""><p>문구추천</p></a></li>
+							<li><a href=""><p>장바구니</p></a></li>
+							<li><a href=""><p>맞춤결제</p></a></li>
+							<li><a href=""><p>카드증빙</p></a></li>
+							<li><a href=""><p>배송조회</p></a></li>
+							<li class="kakao"><a href=""><p>실시간 문의</p></a></li>
+						</ul>
+					</div>
+					<div class="fixed-body-cs">
+						<strong>0000-0000</strong>
+						<p>장인의상패@이메일</p>
+						<small>월요일 - 금요일 09:00~18:00</small>
+						<small>토/일/공휴일은 휴무입니다</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-all">
+			<div class="box">
+				<div class="all-head">
+					<a href="javascript:;" onclick="menuClose();">닫기</a>
+				</div>
+				<div class="all-body">
+					<div class="all-body-member">
+						<ul>
+							<li><a href="">로그인</a></li>
+							<li><a href="">회원가입</a></li>
+							<li><a href="">검색</a></li>
+							<li><a href="">장바구니</a></li>
+							<li><a href="">마이페이지</a></li>
+						</ul>
+					</div>
+					<div class="all-body-cate">
+						<h2>카테고리</h2>
+						<ul>
+							<li><a href="">감사패</a></li>
+							<li><a href="">트로피</a></li>
+							<li><a href="">싱글패</a></li>
+							<li><a href="">이글패</a></li>
+							<li><a href="">홀인원</a></li>
+							<li><a href="">교회</a></li>
+							<li><a href="">명패</a></li>
+							<li><a href="">기타</a></li>
+							<li><a href="">견적상담</a></li>
+							<li><a href="">주문서 다운로드</a></li>
+						</ul>
+					</div>
+					<div class="all-body-my">
+						<h2>언더독 님</h2>
+						<ul>
+							<li>
+								<a href="">쇼핑정보</a>
+								<button type="button">쇼핑정보</button>
+								<dl>
+									<dd><a href="">주문내역/배송조회</a></dd>
+									<dd><a href="">시안확인</a></dd>
+									<dd><a href="">장바구니</a></dd>
+									<dd><a href="">취소/교환 내역</a></dd>
+									<dd><a href="">나의 리뷰</a></dd>
+								</dl>
+							</li>
+							<li>
+								<a href="">내 정보</a>
+								<button type="button">내 정보</button>
+								<dl>
+									<dd><a href="">회원정보수정</a></dd>
+									<dd><a href="">배송지관리</a></dd>
+									<dd><a href="">포인트/쿠폰</a></dd>
+								</dl>
+							</li>
+							<li>
+								<a href="">고객센터</a>
+								<button type="button">고객센터</button>
+								<dl>
+									<dd><a href="">문의내역</a></dd>
+									<dd><a href="">자주묻는질문</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<div class="mypage-box">
+				<div class="mypage-left">
+					<h2>언더독<em>님</em></h2>
+					<div class="mypage-left-cate">
+						<ul>
+							<li>
+								<h3>쇼핑정보</h3>
+								<dl>
+									<dd><a href="">주문내역/배송조회</a></dd>
+									<dd><a href="">시안확인</a></dd>
+									<dd class="active"><a href="">장바구니</a></dd>
+									<dd><a href="">취소/교환 내역</a></dd>
+									<dd><a href="">나의 리뷰</a></dd>
+								</dl>
+							</li>
+							<li>
+								<h3>내 정보</h3>
+								<dl>
+									<dd><a href="">회원정보수정</a></dd>
+									<dd><a href="">배송지관리</a></dd>
+									<dd><a href="">포인트/쿠폰</a></dd>
+								</dl>
+							</li>
+							<li>
+								<h3>고객센터</h3>
+								<dl>
+									<dd><a href="">문의내역</a></dd>
+									<dd><a href="">자주묻는질문</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+					<div class="mypage-left-cs">
+						<strong>0000-0000</strong>
+						<p>장인의상패@이메일</p>
+						<small>월요일 - 금요일 09:00~18:00</small>
+						<small>토/일/공휴일은 휴무입니다</small>
+					</div>
+				</div>
+				<div class="mypage-right">
+					<div class="mypage-top-box">
+						<ul>
+							<li class="order active">
+								<a href="" class="inner">
+									<div class="inner-box">
+										<b>주문관리</b>
+										<div>
+											<strong>진행중 (4)</strong>
+											<p>크리스탈 명패 UN2839 스틸(기본) 외 4건</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="point">
+								<a href="" class="inner">
+									<div class="inner-box">
+										<b>포인트</b>
+										<div>
+											<strong>3600P</strong>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="coupon">
+								<a href="" class="inner">
+									<div class="inner-box">
+										<b>쿠폰</b>
+										<div>
+											<strong>3개</strong>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="table-box mt56 mt-lg-30">
+						<div class="table-head">
+							<div class="title-box">
+								<h2>장바구니</h2>
+							</div>
+						</div>
+						<div class="table-body">
+							<table>
+								<thead>
+									<tr>
+										<th class="check">
+											<div class="table-check-box">
+												<input type="checkbox" name="check" id="check">
+												<label for="checkbox">선택</label>
+											</div>
+										</th>
+										<th class="subject">상품정보</th>
+										<th>수량</th>
+										<th>주문금액</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="check">
+											<div class="table-check-box">
+												<input type="checkbox" name="check" id="check">
+												<label for="checkbox">선택</label>
+											</div>
+										</td>
+										<td class="subject">
+											<div class="table-image-box lg">
+												<a href="" class="inner">
+													<div class="image">
+														<img src="./asset/images/img_table_image.png">
+													</div>
+													<div class="content">
+														<p>크리스탈 명패 UN2839</p>
+														<dl>
+															<dd>스틸(기본)</dd>
+															<dd>230,000원</dd>
+														</dl>
+													</div>
+												</a>
+												<a href="" class="delete">삭제</a>
+											</div>
+										</td>
+										<td>
+											<div class="quantity-box">
+												<a href="" class="minus">감소</a>
+												<input type="text" value="1">
+												<a href="" class="plus">증가</a>
+											</div>
+										</td>
+										<td>230,000원</td>
+									</tr>
+									<tr>
+										<td class="check">
+											<div class="table-check-box">
+												<input type="checkbox" name="check" id="check">
+												<label for="checkbox">선택</label>
+											</div>
+										</td>
+										<td class="subject">
+											<div class="table-image-box lg">
+												<a href="" class="inner">
+													<div class="image">
+														<img src="./asset/images/img_table_image.png">
+													</div>
+													<div class="content">
+														<p>크리스탈 명패 UN2839</p>
+														<dl>
+															<dd>스틸(기본)</dd>
+															<dd>230,000원</dd>
+														</dl>
+													</div>
+												</a>
+												<a href="" class="delete">삭제</a>
+											</div>
+										</td>
+										<td>
+											<div class="quantity-box">
+												<a href="" class="minus">감소</a>
+												<input type="text" value="1">
+												<a href="" class="plus">증가</a>
+											</div>
+										</td>
+										<td>230,000원</td>
+									</tr>
+									<tr>
+										<td class="check">
+											<div class="table-check-box">
+												<input type="checkbox" name="check" id="check">
+												<label for="checkbox">선택</label>
+											</div>
+										</td>
+										<td class="subject">
+											<div class="table-image-box lg">
+												<a href="" class="inner">
+													<div class="image">
+														<img src="./asset/images/img_table_image.png">
+													</div>
+													<div class="content">
+														<p>크리스탈 명패 UN2839</p>
+														<dl>
+															<dd>스틸(기본)</dd>
+															<dd>230,000원</dd>
+														</dl>
+													</div>
+												</a>
+												<a href="" class="delete">삭제</a>
+											</div>
+										</td>
+										<td>
+											<div class="quantity-box">
+												<a href="" class="minus">감소</a>
+												<input type="text" value="1">
+												<a href="" class="plus">증가</a>
+											</div>
+										</td>
+										<td>230,000원</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="table-foot">
+							<div class="button-box">
+								<a href="" class="btn btn-bd-black sm">선택 삭제</a>
+							</div>
+						</div>
+					</div>
+					<div class="title-box mt64 mt-lg-32 mb16">
+						<h2>결제 정보</h2>
+					</div>
+					<div class="order-price-box">
+						<div class="list">
+							<ul>
+								<li>
+									<div class="price-list">
+										<dl>
+											<dd>
+												<b>주문금액</b>
+												<div>
+													<p>1,760,000원</p>
+												</div>
+											</dd>
+											<dd>
+												<b>상품할인</b>
+												<div>
+													<p>880,000원</p>
+												</div>
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="price-total">
+										<strong>결제금액</strong>
+										<div>
+											<b>880,000원</b>
+											<dl>
+												<dd>카드결제</dd>
+												<dd>국민카드</dd>
+											</dl>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="button">
+							<a href="javascript:;" onclick="popupOpen('popup01');">주문하기 (문구작성)</a>
+						</div>
+					</div>
+					<div class="title-box mt80 mt-lg-40 mb16">
+						<h2>상품 준비 절차</h2>
+					</div>
+					<div class="order-step-box">
+						<ul>
+							<li class="off">
+								<strong>01. 제품선택</strong>
+								<p>
+									장인의상패에는 다양한 상품이 준비되어 있습니다. <br>
+									용도와 금액대, 재질별로 검색이 가능하니 편리하게 원하시는 상품을 찾아보세요.
+								</p>
+							</li>
+							<li class="on">
+								<strong>02. 문구작성</strong>
+								<p>
+									상품의 문구를 작성해주세요. 작성이 어려우실 시 <br> 
+									'문구 추천' 기능을 이용해보세요!
+								</p>
+							</li>
+							<li>
+								<strong>03. 결제하기</strong>
+								<p>
+									다양한 결제 수단을 이용해서 결제해주세요. <br>
+									세금계산서 및 현금영수증도 제공받을 수 있어요.
+								</p>
+							</li>
+							<li>
+								<strong>04. 시안확인</strong>
+								<p>
+									성한 문구를 바탕으로 담당 디자이너가 시안 작업을 진행합니다. <br>
+									상패 제작 후에는 수정이 불가하니 시안을 신중히 확인해주세요.
+								</p>
+							</li>
+							<li>
+								<strong>05. 상품 제작 및 출고</strong>
+								<p>
+									상품을 제작하여 안전하게 2중 포장 후 택배, 퀵 서비스, <br>
+									직접 방문 등의 서비스를 제공하고 있습니다. <br>
+									(퀵서비스의 경우 추가요금이 발생될 수 있습니다.)
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup-box">
+			<div class="box alert" data-name="popup01">
+				<div class="popup-head">
+					<a href="javascript:;" onclick="popupClose();">닫기</a>
+				</div>
+				<div class="popup-body">
+					<div class="popup-body-text">
+						<h2>등록된 문구가 있습니다.<br>정말로 수정하시겠습니까?</h2>
+					</div>
+					<div class="button-box">
+						<a href="javascript:;" onclick="popupClose();" class="btn btn-bd-lightgray mr12 mr-lg-8 sm">취소</a>
+						<a href="" class="btn btn-black sm">문구변경</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer-top">
+				<div class="footer-top-left">
+					<h2><img src="./asset/images/logo.png"></h2>
+					<ul>
+						<li><a href="">주문방법</a></li>
+						<li><a href="">제작기간</a></li>
+						<li><a href="">케이스</a></li>
+						<li><a href="">문구추천</a></li>
+						<li><a href="">질문과답변</a></li>
+					</ul>
+				</div>
+				<div class="footer-top-center">
+					<div class="top-center-cate">
+						<ul>
+							<li><a href="">이용약관</a></li>
+							<li><a href="">개인정보처리방침</a></li>
+							<li><a href="">자주묻는질문</a></li>
+							<li><a href="">견적요청</a></li>
+							<li><a href="">주문서받기</a></li>
+						</ul>
+					</div>
+					<div class="top-center-info">
+						<ul>
+							<li>회사명 : 언더독</li>
+							<li>대표자명 : 김수철</li>
+							<li>주소 : 서울특별시 중구 마른내로 61-1, 2층 206호(안현동1가)</li>
+							<li>사업자 등록번호 : </li>
+							<li>통신판매번호 2023-서울강동-0202</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-top-right">
+					<strong>0000-0000</strong>
+					<p>장인의상패@이메일</p>
+					<small>월요일 - 금요일 09:00~18:00</small>
+					<small>토/일/공휴일은 휴무입니다</small>
+					<ul>
+						<li class="blog"><a href="" target="_blank">블로그</a></li>
+						<li class="instagram"><a href="" target="_blank">인스타그램</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>Copyright 언더독 컴퍼니.All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<script src="./asset/js/swiper.js"></script>
+</body>
+</html>

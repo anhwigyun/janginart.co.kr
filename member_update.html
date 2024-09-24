@@ -1,0 +1,550 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="robots" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">  
+	<meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover">
+	<link href="" rel="icon" type="image/jpg">
+	<link href="" rel="shortcut icon" type="image/jpg">
+	<link href="" rel="apple-touch-icon" type="image/jpg">				
+	<link rel="stylesheet" type="text/css" href="./asset/css/swiper.min.css"> 
+	<link rel="stylesheet" type="text/css" href="./asset/css/base.css"> 
+	<link rel="stylesheet" type="text/css" href="./asset/css/grid.css"> 
+	<link rel="stylesheet" type="text/css" href="./asset/css/common.css?a=2"> 
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="./asset/js/swiper.min.js"></script>	
+	<script src="./asset/js/common.js"></script>
+</head>
+<body>
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="header-top-logo">
+					<h1><a href=""><img src="./asset/images/logo.png"></a></h1>
+				</div>
+				<div class="header-top-member">
+					<ul>
+						<li><a href="">로그인</a></li>
+						<li><a href="">회원가입</a></li>
+						<li><a href="">검색</a></li>
+						<li><a href="">장바구니</a></li>
+						<li><a href="">마이페이지<span>시안확인</span></a></li>
+					</ul>
+					<a href="javascript:;" onclick="menuOpen();" class="menu">메뉴바</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="header-bottom-cate">
+					<a href="javascript:;" class="all" onclick="menuOpen();">전체 카테고리</a>
+					<ul>
+						<li><a href="">감사패</a></li>
+						<li><a href="">트로피</a></li>
+						<li><a href="">싱글패</a></li>
+						<li><a href="">이글패</a></li>
+						<li><a href="">홀인원</a></li>
+						<li><a href="">교회</a></li>
+						<li><a href="">명패</a></li>
+						<li><a href="">기타</a></li>
+					</ul>
+				</div>
+				<div class="header-bottom-link">
+					<ul>
+						<li><a href="">견적상담</a></li>
+						<li><a href="">주문서 다운로드</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header-fixed">
+			<div class="box">
+				<div class="header-fixed-button">
+					<a href="javascript:;" onclick="rightToggle();">토글</a>
+				</div>
+				<div class="header-fixed-body">
+					<h2>주문도우미</h2>
+					<div class="fixed-body-cate">
+						<ul>
+							<li><a href=""><p>문구추천</p></a></li>
+							<li><a href=""><p>장바구니</p></a></li>
+							<li><a href=""><p>맞춤결제</p></a></li>
+							<li><a href=""><p>카드증빙</p></a></li>
+							<li><a href=""><p>배송조회</p></a></li>
+							<li class="kakao"><a href=""><p>실시간 문의</p></a></li>
+						</ul>
+					</div>
+					<div class="fixed-body-cs">
+						<strong>0000-0000</strong>
+						<p>장인의상패@이메일</p>
+						<small>월요일 - 금요일 09:00~18:00</small>
+						<small>토/일/공휴일은 휴무입니다</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-all">
+			<div class="box">
+				<div class="all-head">
+					<a href="javascript:;" onclick="menuClose();">닫기</a>
+				</div>
+				<div class="all-body">
+					<div class="all-body-member">
+						<ul>
+							<li><a href="">로그인</a></li>
+							<li><a href="">회원가입</a></li>
+							<li><a href="">검색</a></li>
+							<li><a href="">장바구니</a></li>
+							<li><a href="">마이페이지</a></li>
+						</ul>
+					</div>
+					<div class="all-body-cate">
+						<h2>카테고리</h2>
+						<ul>
+							<li><a href="">감사패</a></li>
+							<li><a href="">트로피</a></li>
+							<li><a href="">싱글패</a></li>
+							<li><a href="">이글패</a></li>
+							<li><a href="">홀인원</a></li>
+							<li><a href="">교회</a></li>
+							<li><a href="">명패</a></li>
+							<li><a href="">기타</a></li>
+							<li><a href="">견적상담</a></li>
+							<li><a href="">주문서 다운로드</a></li>
+						</ul>
+					</div>
+					<div class="all-body-my">
+						<h2>언더독 님</h2>
+						<ul>
+							<li>
+								<a href="">쇼핑정보</a>
+								<button type="button">쇼핑정보</button>
+								<dl>
+									<dd><a href="">주문내역/배송조회</a></dd>
+									<dd><a href="">시안확인</a></dd>
+									<dd><a href="">장바구니</a></dd>
+									<dd><a href="">취소/교환 내역</a></dd>
+									<dd><a href="">나의 리뷰</a></dd>
+								</dl>
+							</li>
+							<li>
+								<a href="">내 정보</a>
+								<button type="button">내 정보</button>
+								<dl>
+									<dd><a href="">회원정보수정</a></dd>
+									<dd><a href="">배송지관리</a></dd>
+									<dd><a href="">포인트/쿠폰</a></dd>
+								</dl>
+							</li>
+							<li>
+								<a href="">고객센터</a>
+								<button type="button">고객센터</button>
+								<dl>
+									<dd><a href="">문의내역</a></dd>
+									<dd><a href="">자주묻는질문</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<div class="mypage-box">
+				<div class="mypage-left">
+					<h2>언더독<em>님</em></h2>
+					<div class="mypage-left-cate">
+						<ul>
+							<li>
+								<h3>쇼핑정보</h3>
+								<dl>
+									<dd><a href="">주문내역/배송조회</a></dd>
+									<dd><a href="">시안확인</a></dd>
+									<dd><a href="">장바구니</a></dd>
+									<dd><a href="">취소/교환 내역</a></dd>
+									<dd><a href="">나의 리뷰</a></dd>
+								</dl>
+							</li>
+							<li>
+								<h3>내 정보</h3>
+								<dl>
+									<dd><a href="">회원정보수정</a></dd>
+									<dd><a href="">배송지관리</a></dd>
+									<dd><a href="">포인트/쿠폰</a></dd>
+								</dl>
+							</li>
+							<li>
+								<h3>고객센터</h3>
+								<dl>
+									<dd class="active"><a href="">문의내역</a></dd>
+									<dd><a href="">자주묻는질문</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+					<div class="mypage-left-cs">
+						<strong>0000-0000</strong>
+						<p>장인의상패@이메일</p>
+						<small>월요일 - 금요일 09:00~18:00</small>
+						<small>토/일/공휴일은 휴무입니다</small>
+					</div>
+				</div>
+				<div class="mypage-right">
+					<div class="mypage-top-box">
+						<ul>
+							<li class="order active">
+								<a href="" class="inner">
+									<div class="inner-box">
+										<b>주문관리</b>
+										<div>
+											<strong>진행중 (4)</strong>
+											<p>크리스탈 명패 UN2839 스틸(기본) 외 4건</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="point">
+								<a href="" class="inner">
+									<div class="inner-box">
+										<b>포인트</b>
+										<div>
+											<strong>3600P</strong>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="coupon">
+								<a href="" class="inner">
+									<div class="inner-box">
+										<b>쿠폰</b>
+										<div>
+											<strong>3개</strong>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="title-box mt64 mt-lg-30 mb16">
+						<h2>회원정보 수정</h2>
+					</div>
+					<div class="write-box">
+						<ul>
+							<li>
+								<strong>SNS 연결</strong>
+								<div>
+									<div class="social-box">
+										<ul>
+											<li class="kakao">
+												<input type="checkbox" name="radio" id="radio01">
+												<label for="radio01">카카오</label>
+											</li>
+											<li class="naver">
+												<input type="checkbox" name="radio" id="radio02">
+												<label for="radio02">네이버</label>
+											</li>
+											<li class="google">
+												<input type="checkbox" name="radio" id="radio03">
+												<label for="radio03">구글</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<strong>성명</strong>
+								<div>
+									<div class="input-box readonly mx560">
+										<input type="text" readonly value="언더독">
+									</div>
+								</div>
+							</li>
+							<li>
+								<strong>비밀번호</strong>
+								<div>
+									<div class="button-box mx560">
+										<a href="javascript:;" onclick="popupOpen('popup01');" class="btn btn-bd-black flex-1 px0 h40">비밀번호 변경</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<strong>연락처</strong>
+								<div>
+									<div class="flex flex-vc">
+										<div class="input-box readonly col-12 mx560 flex-lg-1">
+											<input type="text" value="01012341234" readonly>
+										</div>
+										<div class="button-box ml8 w120 w-lg-80">
+											<a href="javascript:;" onclick="popupOpen('popup02');" class="btn btn-bd-black h40 flex-1 px0">연락처 변경</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<strong>주소</strong>
+								<div>
+									<div class="flex flex-vc">
+										<div class="input-box readonly col-12 mx560 flex-lg-1">
+											<input type="text" value="000-000" readonly>
+										</div>
+										<div class="button-box ml8 w120 w-lg-80">
+											<a href="" class="btn btn-bd-black h40 flex-1 px0">주소 변경</a>
+										</div>
+									</div>
+									<div class="input-box readonly mx560 mt5">
+										<input type="text" value="서울특별시 중구 마른내로 61-1" readonly>
+									</div>
+									<div class="input-box readonly mx560 mt5">
+										<input type="text" value="2층 206호(인현동 1가)" readonly>
+									</div>
+								</div>
+							</li>
+							<li>
+								<strong>생년월일</strong>
+								<div>
+									<div class="input-box readonly mx560">
+										<input type="text" value="1990.00.00" readonly>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="link-box mt24 mt-lg-15">
+						<a href="javascript:;" onclick="popupOpen('popup03');">회원탈퇴</a>
+					</div>
+					<div class="button-box mt40 mt-lg-30">
+						<a href="" class="btn btn-black lg radius">저장하기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup-box">
+			<div class="box basic" data-name="popup01">
+				<div class="title-box">
+					<h2 class="tc lg">비밀번호 변경</h2>
+					<p class="tc">새로운 비밀번호를 등록해 주세요.</p>
+				</div>
+				<div class="write-box full mt24">
+					<ul>
+						<li>
+							<strong class="req">기존 비밀번호</strong>
+							<div>
+								<div class="input-box">
+									<input type="password" placeholder="기존 비밀번호를 작성해주세요">
+								</div>
+							</div>
+						</li>
+						<li>
+							<strong class="req">새 비밀번호</strong>
+							<div>
+								<div class="input-box">
+									<input type="password" placeholder="새로운 비밀번호를 작성해주세요">
+								</div>
+								<div class="input-box mt8">
+									<input type="password" placeholder="비밀번호를 다시 한번 작성해주세요">
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="button-box mt40 mt-lg-24">
+					<a href="" class="btn btn-black lg radius flex-1 px0">비밀번호 변경</a>
+				</div>
+			</div>
+			<div class="box basic" data-name="popup02">
+				<div class="title-box">
+					<h2 class="tc lg">연락처 변경</h2>
+					<p class="tc">새로운 연락처를 확인해주세요</p>
+				</div>
+				<div class="write-box full mt24">
+					<ul>
+						<li>
+							<strong class="req">성명</strong>
+							<div>
+								<div class="input-box">
+									<input type="text" placeholder="성명을 작성해주세요.">
+								</div>
+							</div>
+						</li>
+						<li>
+							<strong class="req">연락처</strong>
+							<div>
+								<div class="flex flex-vc">
+									<div class="input-box flex-1 mr8">
+										<input type="text" placeholder="연락처를 작성해주세요">
+									</div>
+									<div class="button-box">
+										<a href="" class="btn btn-lightgray w120 w-lg-90 h40">연락처 확인</a>
+									</div>
+								</div>
+								<div class="flex flex-vc mt8">
+									<div class="input-box flex-1 mr8">
+										<input type="text" placeholder="인증번호">
+									</div>
+									<div class="button-box">
+										<a href="" class="btn btn-bd-black w120 w-lg-90 h40">확인</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="button-box mt40 mt-lg-24">
+					<a href="" class="btn btn-black lg radius flex-1 px0">비밀번호 변경</a>
+				</div>
+			</div>
+			<div class="box small" data-name="popup03">
+				<div class="popup-head">
+					<a href="javascript:;" onclick="popupClose();">닫기</a>
+				</div>
+				<div class="popup-body">
+					<div class="title-box">
+						<h2 class="tc">회원탈퇴</h2>
+						<p class="tc">
+							의견을 남겨주시면 소중히 새겨듣고<br> 
+							오래 이용할 수 있는 서비스로 개선하겠습니다.
+						</p>
+					</div>
+					<div class="title-box pt24 mt24 bt2">
+						<h2 class="f20 f-lg-17">탈퇴 사유 선택</h2>
+					</div>
+					<div class="radio-list-box mt24 mt-lg-15">
+						<ul>
+							<li>
+								<input type="radio" name="radio" id="radi01">
+								<label for="radio01"><p>원하는 상품이 없음</p></label>
+							</li>
+							<li>
+								<input type="radio" name="radio" id="radi02">
+								<label for="radio02"><p>탈퇴 후 재가입을 위해서</p></label>
+							</li>
+							<li>
+								<input type="radio" name="radio" id="radi03">
+								<label for="radio03"><p>개인정보 누출 우려</p></label>
+							</li>
+							<li>
+								<input type="radio" name="radio" id="radi04">
+								<label for="radio04"><p>상품의 다양성/품질 불만</p></label>
+							</li>
+							<li>
+								<input type="radio" name="radio" id="radi05">
+								<label for="radio05"><p>상품 가격 불만</p></label>
+							</li>
+							<li>
+								<input type="radio" name="radio" id="radi06">
+								<label for="radio06"><p>배송 불만</p></label>
+							</li>
+							<li>
+								<input type="radio" name="radio" id="radi07">
+								<label for="radio07"><p>교환/환불/반품 불만</p></label>
+							</li>
+							<li>
+								<input type="radio" name="radio" id="radi08">
+								<label for="radio08"><p>사후조치 불만</p></label>
+							</li>
+							<li>
+								<input type="radio" name="radio" id="radi09">
+								<label for="radio09"><p>기타(직접입력)</p></label>
+							</li>
+						</ul>
+					</div>
+					<div class="text-list-box">
+						<ul>
+							<li>
+								<p>
+									보유하고 있던 <b>할인 쿠폰, 배송정보, 구매 이력</b> 등은 모두 소멸되고 
+									복구가 불가능합니다. 단, [개인정보보호법, 전자상거래법] 등 
+									기타 법령에서 요구하는 정보는 해당 법령에서 요구하는 
+									기간 동안 보존합니다.
+								</p>
+							</li>
+							<li><p>회원 탈퇴 후 <b>30일간 재가입이 불가능</b>합니다.</p></li>
+							<li><p>연동된 SNS 계정이 있는 경우 함께 탈퇴됩니다.</p></li>
+							<li>
+								<p>
+									탈퇴 후 장인의상패에 입력하신 문의 및 후기는 삭제되지 않으며, 
+									회원정보 삭제로 인해 작성자 본인을 확인할 수 없어 편집 및 삭제 처리가 
+									원천적으로 불가능합니다. 문의, 후기 삭제를 원하시는 경우에는 먼저 
+									해당 게시물을 삭제하신 후 탈퇴를 신청해 주시길 바랍니다.
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="all-check-box mt24">
+						<input type="checkbox" name="check" id="check">
+						<label for="check">(필수) 위 내용을 모두 확인했습니다.</label>
+					</div>
+					<div class="button-box mt24">
+						<a href="javascript:;" onclick="popupClose();" class="btn btn-bd-black h40 flex-1 px0 mr8">취소</a>
+						<a href="" class="btn btn-bd-black h40 flex-1 px0">회원탈퇴</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer-top">
+				<div class="footer-top-left">
+					<h2><img src="./asset/images/logo.png"></h2>
+					<ul>
+						<li><a href="">주문방법</a></li>
+						<li><a href="">제작기간</a></li>
+						<li><a href="">케이스</a></li>
+						<li><a href="">문구추천</a></li>
+						<li><a href="">질문과답변</a></li>
+					</ul>
+				</div>
+				<div class="footer-top-center">
+					<div class="top-center-cate">
+						<ul>
+							<li><a href="">이용약관</a></li>
+							<li><a href="">개인정보처리방침</a></li>
+							<li><a href="">자주묻는질문</a></li>
+							<li><a href="">견적요청</a></li>
+							<li><a href="">주문서받기</a></li>
+						</ul>
+					</div>
+					<div class="top-center-info">
+						<ul>
+							<li>회사명 : 언더독</li>
+							<li>대표자명 : 김수철</li>
+							<li>주소 : 서울특별시 중구 마른내로 61-1, 2층 206호(안현동1가)</li>
+							<li>사업자 등록번호 : </li>
+							<li>통신판매번호 2023-서울강동-0202</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-top-right">
+					<strong>0000-0000</strong>
+					<p>장인의상패@이메일</p>
+					<small>월요일 - 금요일 09:00~18:00</small>
+					<small>토/일/공휴일은 휴무입니다</small>
+					<ul>
+						<li class="blog"><a href="" target="_blank">블로그</a></li>
+						<li class="instagram"><a href="" target="_blank">인스타그램</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>Copyright 언더독 컴퍼니.All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<script src="./asset/js/swiper.js"></script>
+</body>
+</html>

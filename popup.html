@@ -1,0 +1,412 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="robots" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">  
+	<meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover">
+	<link href="" rel="icon" type="image/jpg">
+	<link href="" rel="shortcut icon" type="image/jpg">
+	<link href="" rel="apple-touch-icon" type="image/jpg">				
+	<link rel="stylesheet" type="text/css" href="./asset/css/swiper.min.css"> 
+	<link rel="stylesheet" type="text/css" href="./asset/css/base.css"> 
+	<link rel="stylesheet" type="text/css" href="./asset/css/grid.css"> 
+	<link rel="stylesheet" type="text/css" href="./asset/css/common.css?a=1"> 
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="./asset/js/swiper.min.js"></script>	
+	<script src="./asset/js/common.js"></script>
+</head>
+<body>
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="header-top-logo">
+					<h1><a href=""><img src="./asset/images/logo.png"></a></h1>
+				</div>
+				<div class="header-top-member">
+					<ul>
+						<li><a href="">로그인</a></li>
+						<li><a href="">회원가입</a></li>
+						<li><a href="">검색</a></li>
+						<li><a href="">장바구니</a></li>
+						<li><a href="">마이페이지<span>시안확인</span></a></li>
+					</ul>
+					<a href="javascript:;" onclick="menuOpen();" class="menu">메뉴바</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="header-bottom-cate">
+					<a href="javascript:;" class="all" onclick="menuOpen();">전체 카테고리</a>
+					<ul>
+						<li><a href="">감사패</a></li>
+						<li><a href="">트로피</a></li>
+						<li><a href="">싱글패</a></li>
+						<li><a href="">이글패</a></li>
+						<li><a href="">홀인원</a></li>
+						<li><a href="">교회</a></li>
+						<li><a href="">명패</a></li>
+						<li><a href="">기타</a></li>
+					</ul>
+				</div>
+				<div class="header-bottom-link">
+					<ul>
+						<li><a href="">견적상담</a></li>
+						<li><a href="">주문서 다운로드</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header-fixed">
+			<div class="box">
+				<div class="header-fixed-button">
+					<a href="javascript:;" onclick="rightToggle();">토글</a>
+				</div>
+				<div class="header-fixed-body">
+					<h2>주문도우미</h2>
+					<div class="fixed-body-cate">
+						<ul>
+							<li><a href=""><p>문구추천</p></a></li>
+							<li><a href=""><p>장바구니</p></a></li>
+							<li><a href=""><p>맞춤결제</p></a></li>
+							<li><a href=""><p>카드증빙</p></a></li>
+							<li><a href=""><p>배송조회</p></a></li>
+							<li class="kakao"><a href=""><p>실시간 문의</p></a></li>
+						</ul>
+					</div>
+					<div class="fixed-body-cs">
+						<strong>0000-0000</strong>
+						<p>장인의상패@이메일</p>
+						<small>월요일 - 금요일 09:00~18:00</small>
+						<small>토/일/공휴일은 휴무입니다</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-all">
+			<div class="box">
+				<div class="all-head">
+					<a href="javascript:;" onclick="menuClose();">닫기</a>
+				</div>
+				<div class="all-body">
+					<div class="all-body-member">
+						<ul>
+							<li><a href="">로그인</a></li>
+							<li><a href="">회원가입</a></li>
+							<li><a href="">검색</a></li>
+							<li><a href="">장바구니</a></li>
+							<li><a href="">마이페이지</a></li>
+						</ul>
+					</div>
+					<div class="all-body-cate">
+						<h2>카테고리</h2>
+						<ul>
+							<li><a href="">감사패</a></li>
+							<li><a href="">트로피</a></li>
+							<li><a href="">싱글패</a></li>
+							<li><a href="">이글패</a></li>
+							<li><a href="">홀인원</a></li>
+							<li><a href="">교회</a></li>
+							<li><a href="">명패</a></li>
+							<li><a href="">기타</a></li>
+							<li><a href="">견적상담</a></li>
+							<li><a href="">주문서 다운로드</a></li>
+						</ul>
+					</div>
+					<div class="all-body-my">
+						<h2>언더독 님</h2>
+						<ul>
+							<li>
+								<a href="">쇼핑정보</a>
+								<button type="button">쇼핑정보</button>
+								<dl>
+									<dd><a href="">주문내역/배송조회</a></dd>
+									<dd><a href="">시안확인</a></dd>
+									<dd><a href="">장바구니</a></dd>
+									<dd><a href="">취소/교환 내역</a></dd>
+									<dd><a href="">나의 리뷰</a></dd>
+								</dl>
+							</li>
+							<li>
+								<a href="">내 정보</a>
+								<button type="button">내 정보</button>
+								<dl>
+									<dd><a href="">회원정보수정</a></dd>
+									<dd><a href="">배송지관리</a></dd>
+									<dd><a href="">포인트/쿠폰</a></dd>
+								</dl>
+							</li>
+							<li>
+								<a href="">고객센터</a>
+								<button type="button">고객센터</button>
+								<dl>
+									<dd><a href="">문의내역</a></dd>
+									<dd><a href="">자주묻는질문</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container sm">
+			<div class="tc"><a href="javascript:;" onclick="popupOpen('popup01');">로그인</a></div>
+			<div class="tc mt10"><a href="javascript:;" onclick="popupOpen('popup02');">비밀번호 찾기</a></div>
+			<div class="tc mt10"><a href="javascript:;" onclick="popupOpen('popup03');">비밀번호 변경</a></div>
+			<div class="tc mt10"><a href="javascript:;" onclick="popupOpen('popup04');">비밀번호 변경 완료</a></div>
+			<div class="tc mt10"><a href="javascript:;" onclick="popupOpen('popup05');">아이디 찾기</a></div>
+			<div class="tc mt10"><a href="javascript:;" onclick="popupOpen('popup06');">아이디 찾기 완료</a></div>
+			<div class="tc mt10"><a href="javascript:;" onclick="popupOpen('popup07');">비회원 주문조회</a></div>
+		</div>
+		<div class="popup-box">
+			<div class="box basic" data-name="popup01">
+				<div class="login-box">
+					<div class="login-logo">
+						<h2><img src="./asset/images/logo.png"></h2>
+					</div>
+					<div class="login-form">
+						<div class="input-box">
+							<input type="text" placeholder="이메일">
+						</div>
+						<div class="input-box mt8">
+							<input type="password" placeholder="비밀번호">
+						</div>
+					</div>
+					<div class="login-link">
+						<div class="check-box">
+							<input type="checkbox" name="check" id="check">
+							<label for="check">자동로그인</label>
+						</div>
+						<ul>
+							<li><a href="">아이디 찾기</a></li>
+							<li><a href="">비밀번호 찾기</a></li>
+						</ul>
+						<div class="button-box">
+							<a href="" class="btn btn-black lg radius h50 f17">로그인</a>
+						</div>
+					</div>
+					<div class="login-social">
+						<div>
+							<p>간편 로그인이 필요하신가요?</p>
+							<b>SNS 계정 로그인</b>
+						</div>
+						<ul>
+							<li class="kakao"><a href="">카카오</a></li>
+							<li class="naver"><a href="">네이버</a></li>
+							<li class="google"><a href="">구글</a></li>
+						</ul>
+					</div>
+					<div class="login-member">
+						<a href="">
+							<div>
+								<small>회원가입하고 다양한 상품을 확인해보세요.</small>
+								<p><b>아직 장인의 상패 회원</b>이 아니신가요?</p>
+							</div>
+						</a>
+						<p>회원가입 시 혜택 3천원 적립 | 구매시 2% 적립</p>
+					</div>
+					<div class="login-nomember">
+						<a href="">
+							<p>비회원 주문조회</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="box basic" data-name="popup02">
+				<div class="title-box">
+					<h2 class="lg tc">비밀번호 찾기</h2>
+					<p class="tc">비밀번호를 찾으려는 아이디를 입력해주세요.</p>
+				</div>
+				<div class="write-box full mt24 pt24 bt2">
+					<ul>
+						<li>
+							<strong class="req">아이디</strong>
+							<div>
+								<div class="input-box">
+									<input type="text" placeholder="아이디를 작성해주세요.">
+								</div>
+							</div>
+						</li>
+						<li>
+							<strong class="req">연락처</strong>
+							<div class="flex flex-vc">
+								<div class="input-box flex-1 mr8">
+									<input type="text" placeholder="연락처를 작성해주세요.">
+								</div>
+								<div class="button-box w120 w-lg-90">
+									<a href="" class="btn btn-bd-black h40 flex-1 px0">연락처 확인</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="button-box mt64 mt-lg-30">
+					<a href="" class="btn btn-black lg radius flex-1">다음</a>
+				</div>
+			</div>
+			<div class="box basic" data-name="popup03">
+				<div class="title-box">
+					<h2 class="lg tc">비밀번호 변경</h2>
+					<p class="tc">새로운 비밀번호를 등록해 주세요</p>
+				</div>
+				<div class="write-box full mt24 pt24 bt2">
+					<ul>
+						<li>
+							<strong class="req">새 비밀번호</strong>
+							<div>
+								<div class="input-box">
+									<input type="password" placeholder="새로운 비밀번호를 작성해주세요.">
+								</div>
+								<div class="input-box mt8">
+									<input type="password" placeholder="비밀번호 확인">
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="button-box mt64 mt-lg-30">
+					<a href="" class="btn btn-black lg radius flex-1">다음</a>
+				</div>
+			</div>
+			<div class="box basic" data-name="popup04">
+				<div class="title-box">
+					<h2 class="lg tc">비밀번호가 변경되었습니다.</h2>
+					<p class="tc">새로운 비밀번호로 로그인해주세요.</p>
+				</div>
+				<div class="button-box mt55 mt-lg-30">
+					<a href="" class="btn btn-black lg radius flex-1">로그인</a>
+				</div>
+			</div>
+			<div class="box basic" data-name="popup05">
+				<div class="title-box">
+					<h2 class="lg tc">아이디 찾기</h2>
+					<p class="tc">가입시 등록하신 연락처를 입력하세요.</p>
+				</div>
+				<div class="write-box full mt24 pt24 bt2">
+					<ul>
+						<li>
+							<strong class="req">연락처</strong>
+							<div class="flex flex-vc">
+								<div class="input-box flex-1 mr8">
+									<input type="text" placeholder="연락처를 작성해주세요.">
+								</div>
+								<div class="button-box w120 w-lg-90">
+									<a href="" class="btn btn-bd-black h40 flex-1 px0">연락처 확인</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="button-box mt64 mt-lg-30">
+					<a href="" class="btn btn-black lg radius flex-1">다음</a>
+				</div>
+			</div>
+			<div class="box basic" data-name="popup06">
+				<div class="title-box">
+					<h2 class="lg tc">찾으시는 아이디는<br> <b>aaa123</b>입니다.</h2>
+					<p class="bt2 pt24 mt24 tc">비밀번호가 기억나지 않으신가요?<a href="" class="mt10">비밀번호 재설정하기</a></p>
+				</div>
+				<div class="button-box mt64 mt-lg-30">
+					<a href="" class="btn btn-black lg radius flex-1">로그인</a>
+				</div>
+			</div>
+			<div class="box basic" data-name="popup07">
+				<div class="title-box">
+					<h2 class="lg tc">비회원 주문조회</h2>
+					<p class="tc">비밀번호를 찾으려는 아이디를 입력해주세요.</p>
+				</div>
+				<div class="write-box full mt24 pt24 bt2">
+					<ul>
+						<li>
+							<strong class="req">주문자 성함</strong>
+							<div>
+								<div class="input-box">
+									<input type="text" placeholder="주문자 성함을 작성해주세요.">
+								</div>
+							</div>
+						</li>
+						<li>
+							<strong class="req">핸드폰 번호</strong>
+							<div>
+								<div class="input-box">
+									<input type="text" placeholder="핸드폰 번호를 작성해주세요.">
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="button-box mt64 mt-lg-30">
+					<a href="" class="btn btn-black lg radius flex-1">조회하기</a>
+				</div>
+				<div class="link-box flex-tc mt24">
+					<a href="">장인의 상패 회원가입</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer-top">
+				<div class="footer-top-left">
+					<h2><img src="./asset/images/logo.png"></h2>
+					<ul>
+						<li><a href="">주문방법</a></li>
+						<li><a href="">제작기간</a></li>
+						<li><a href="">케이스</a></li>
+						<li><a href="">문구추천</a></li>
+						<li><a href="">질문과답변</a></li>
+					</ul>
+				</div>
+				<div class="footer-top-center">
+					<div class="top-center-cate">
+						<ul>
+							<li><a href="">이용약관</a></li>
+							<li><a href="">개인정보처리방침</a></li>
+							<li><a href="">자주묻는질문</a></li>
+							<li><a href="">견적요청</a></li>
+							<li><a href="">주문서받기</a></li>
+						</ul>
+					</div>
+					<div class="top-center-info">
+						<ul>
+							<li>회사명 : 언더독</li>
+							<li>대표자명 : 김수철</li>
+							<li>주소 : 서울특별시 중구 마른내로 61-1, 2층 206호(안현동1가)</li>
+							<li>사업자 등록번호 : </li>
+							<li>통신판매번호 2023-서울강동-0202</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-top-right">
+					<strong>0000-0000</strong>
+					<p>장인의상패@이메일</p>
+					<small>월요일 - 금요일 09:00~18:00</small>
+					<small>토/일/공휴일은 휴무입니다</small>
+					<ul>
+						<li class="blog"><a href="" target="_blank">블로그</a></li>
+						<li class="instagram"><a href="" target="_blank">인스타그램</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>Copyright 언더독 컴퍼니.All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<script src="./asset/js/swiper.js"></script>
+</body>
+</html>

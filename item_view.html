@@ -1,0 +1,652 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="robots" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">  
+	<meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover">
+	<link href="" rel="icon" type="image/jpg">
+	<link href="" rel="shortcut icon" type="image/jpg">
+	<link href="" rel="apple-touch-icon" type="image/jpg">				
+	<link rel="stylesheet" type="text/css" href="./asset/css/swiper.min.css"> 
+	<link rel="stylesheet" type="text/css" href="./asset/css/base.css"> 
+	<link rel="stylesheet" type="text/css" href="./asset/css/grid.css"> 
+	<link rel="stylesheet" type="text/css" href="./asset/css/common.css?a=1"> 
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="./asset/js/swiper.min.js"></script>	
+	<script src="./asset/js/common.js"></script>
+</head>
+<body>
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="header-top-logo">
+					<h1><a href=""><img src="./asset/images/logo.png"></a></h1>
+				</div>
+				<div class="header-top-member">
+					<ul>
+						<li><a href="">로그인</a></li>
+						<li><a href="">회원가입</a></li>
+						<li><a href="">검색</a></li>
+						<li><a href="">장바구니</a></li>
+						<li><a href="">마이페이지<span>시안확인</span></a></li>
+					</ul>
+					<a href="javascript:;" onclick="menuOpen();" class="menu">메뉴바</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="header-bottom-cate">
+					<a href="javascript:;" class="all" onclick="menuOpen();">전체 카테고리</a>
+					<ul>
+						<li><a href="">감사패</a></li>
+						<li><a href="">트로피</a></li>
+						<li><a href="">싱글패</a></li>
+						<li><a href="">이글패</a></li>
+						<li><a href="">홀인원</a></li>
+						<li><a href="">교회</a></li>
+						<li><a href="">명패</a></li>
+						<li><a href="">기타</a></li>
+					</ul>
+				</div>
+				<div class="header-bottom-link">
+					<ul>
+						<li><a href="">견적상담</a></li>
+						<li><a href="">주문서 다운로드</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header-fixed">
+			<div class="box">
+				<div class="header-fixed-button">
+					<a href="javascript:;" onclick="rightToggle();">토글</a>
+				</div>
+				<div class="header-fixed-body">
+					<h2>주문도우미</h2>
+					<div class="fixed-body-cate">
+						<ul>
+							<li><a href=""><p>문구추천</p></a></li>
+							<li><a href=""><p>장바구니</p></a></li>
+							<li><a href=""><p>맞춤결제</p></a></li>
+							<li><a href=""><p>카드증빙</p></a></li>
+							<li><a href=""><p>배송조회</p></a></li>
+							<li class="kakao"><a href=""><p>실시간 문의</p></a></li>
+						</ul>
+					</div>
+					<div class="fixed-body-cs">
+						<strong>0000-0000</strong>
+						<p>장인의상패@이메일</p>
+						<small>월요일 - 금요일 09:00~18:00</small>
+						<small>토/일/공휴일은 휴무입니다</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-all">
+			<div class="box">
+				<div class="all-head">
+					<a href="javascript:;" onclick="menuClose();">닫기</a>
+				</div>
+				<div class="all-body">
+					<div class="all-body-member">
+						<ul>
+							<li><a href="">로그인</a></li>
+							<li><a href="">회원가입</a></li>
+							<li><a href="">검색</a></li>
+							<li><a href="">장바구니</a></li>
+							<li><a href="">마이페이지</a></li>
+						</ul>
+					</div>
+					<div class="all-body-cate">
+						<h2>카테고리</h2>
+						<ul>
+							<li><a href="">감사패</a></li>
+							<li><a href="">트로피</a></li>
+							<li><a href="">싱글패</a></li>
+							<li><a href="">이글패</a></li>
+							<li><a href="">홀인원</a></li>
+							<li><a href="">교회</a></li>
+							<li><a href="">명패</a></li>
+							<li><a href="">기타</a></li>
+							<li><a href="">견적상담</a></li>
+							<li><a href="">주문서 다운로드</a></li>
+						</ul>
+					</div>
+					<div class="all-body-my">
+						<h2>언더독 님</h2>
+						<ul>
+							<li>
+								<a href="">쇼핑정보</a>
+								<button type="button">쇼핑정보</button>
+								<dl>
+									<dd><a href="">주문내역/배송조회</a></dd>
+									<dd><a href="">시안확인</a></dd>
+									<dd><a href="">장바구니</a></dd>
+									<dd><a href="">취소/교환 내역</a></dd>
+									<dd><a href="">나의 리뷰</a></dd>
+								</dl>
+							</li>
+							<li>
+								<a href="">내 정보</a>
+								<button type="button">내 정보</button>
+								<dl>
+									<dd><a href="">회원정보수정</a></dd>
+									<dd><a href="">배송지관리</a></dd>
+									<dd><a href="">포인트/쿠폰</a></dd>
+								</dl>
+							</li>
+							<li>
+								<a href="">고객센터</a>
+								<button type="button">고객센터</button>
+								<dl>
+									<dd><a href="">문의내역</a></dd>
+									<dd><a href="">자주묻는질문</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container sm">
+			<div class="item-view-box">
+				<div class="view-left">
+					<div class="view-left-thumb">
+						<img src="./asset/images/test.png">
+						<a href="">360도 보기</a>
+						<div class="rotate">이미지를 좌우로 움직여주세요.</div>
+					</div>
+					<div class="view-left-list">
+						<ul>
+							<li>
+								<h2><a href="javascript:;" class="active">상품 이미지</a></h2>
+								<dl>
+									<dd class="active"><a href="javascript:;"><img src="./asset/images/test.png"></a></dd>
+									<dd><a href="javascript:;"><img src="./asset/images/test.png"></a></dd>
+									<dd><a href="javascript:;"><img src="./asset/images/test.png"></a></dd>
+									<dd><a href="javascript:;"><img src="./asset/images/test.png"></a></dd>
+									<dd><a href="javascript:;"><img src="./asset/images/test.png"></a></dd>
+								</dl>
+							</li>
+							<li>
+								<h2><a href="javascript:;">실제작 시안</a></h2>
+								<dl>
+									<dd><a href="javascript:;"><img src="./asset/images/test.png"></a></dd>
+									<dd><a href="javascript:;"><img src="./asset/images/test.png"></a></dd>
+									<dd><a href="javascript:;"><img src="./asset/images/test.png"></a></dd>
+									<dd><a href="javascript:;"><img src="./asset/images/test.png"></a></dd>
+									<dd><a href="javascript:;"><img src="./asset/images/test.png"></a></dd>
+								</dl>
+							</li>
+							<li>
+								<h2><a href="javascript:;">실제작 제품</a></h2>
+								<dl>
+									<dd><a href="javascript:;"><img src="./asset/images/test.png"></a></dd>
+									<dd><a href="javascript:;"><img src="./asset/images/test.png"></a></dd>
+									<dd><a href="javascript:;"><img src="./asset/images/test.png"></a></dd>
+									<dd><a href="javascript:;"><img src="./asset/images/test.png"></a></dd>
+									<dd><a href="javascript:;"><img src="./asset/images/test.png"></a></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="view-right">
+					<div class="view-right-subject">
+						<div>
+							<h2>TD8 0726 GOLD포인트 주석이글패</h2>
+							<ul>
+								<li>인기</li>
+								<li>특가</li>
+								<li class="soldout">품절</li>
+							</ul>
+						</div>
+						<a href="" class="share"></a>
+					</div>
+					<div class="view-right-price">
+						<div class="price">
+							<b>54%</b>
+							<strong>230,000원</strong>
+							<strike>500,000원</strike>
+						</div>
+						<div class="state">
+							<ul>
+								<li>판매량 : 245</li>
+								<li>리뷰 : 48</li>
+							</ul>
+							<p>세금계산서 가능</p>
+						</div>
+					</div>
+					<div class="view-right-option">
+						<div class="write-box">
+							<ul>
+								<li>
+									<strong>색상 옵션</strong>
+									<div>
+										<div class="sca-box">
+											<ul>
+												<li class="active"><a href="">투명크리스탈</a></li>
+												<li><a href="">블랙크리스탈</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<strong>사이즈</strong>
+									<div>
+										<div class="select-box">
+											<select>
+												<option>대형 (10x20x6cm) + 64,000원</option>
+											</select>
+										</div>
+									</div>
+								</li>
+								<li class="no-border pt20">
+									<strong>제작기간</strong>
+									<div>
+										<p>시안확정 후 약 2영업일</p>
+									</div>
+								</li>
+								<li class="no-border">
+									<strong>재질</strong>
+									<div>
+										<p>크리스탈과 스틸에 도금</p>
+									</div>
+								</li>
+								<li class="no-border">
+									<strong>배송비</strong>
+									<div>
+										<p>무료</p>
+									</div>
+								</li>
+								<li class="pb15">
+									<strong>배송여부</strong>
+									<div>
+										<p>기본배송,  퀵(착불), 직접방문</p>
+									</div>
+								</li>
+								<li>
+									<strong>옵션 선택</strong>
+									<div>
+										<div class="select-box">
+											<select>
+												<option>추가제품 선택</option>
+											</select>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div>
+										<div class="option-box">
+											<ul>
+												<li>
+													<div class="option-subject">
+														<p>크리스탈 명패 UN2839</p>
+														<small>스틸(기본) | 없음</small>
+													</div>
+													<div class="option-quantity">
+														<div class="quantity-box">
+															<a href="" class="minus">감소</a>
+															<input type="text" value="1">
+															<a href="" class="plus">증가</a>
+														</div>
+													</div>
+													<div class="option-price">
+														<strong>260,000</strong>
+														<em>원</em>
+													</div>
+													<div class="option-delete">
+														<a href="">삭제</a>
+													</div>
+												</li>
+												<li>
+													<div class="option-subject">
+														<p>크리스탈 명패 UN2839</p>
+														<small>스틸(기본) | 없음</small>
+													</div>
+													<div class="option-quantity">
+														<div class="quantity-box">
+															<a href="" class="minus">감소</a>
+															<input type="text" value="1">
+															<a href="" class="plus">증가</a>
+														</div>
+													</div>
+													<div class="option-price">
+														<strong>260,000</strong>
+														<em>원</em>
+													</div>
+													<div class="option-delete">
+														<a href="">삭제</a>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="view-right-total">
+						<b>총 상품금액</b>
+						<ul>
+							<li>총 수량 2개</li>
+							<li><strong>490,000<em>원</em></strong></li>
+						</ul>
+					</div>
+					<div class="view-right-button">
+						<div class="button-box">
+							<a href="" class="btn btn-bd-black lg mr8 px45 px-lg-20">장바구니</a>
+							<a href="" class="btn btn-black flex-1 lg px0">바로 주문(문구 작성)</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-box mt80 mt-lg-50">
+				<ul>
+					<li class="active"><a href="javascript:;" class="tab">상세정보</a></li>
+					<li><a href="javascript:;" class="tab">상품 후기</a></li>
+					<li><a href="javascript:;" class="tab">교환 및 반품 안내</a></li>
+				</ul>
+			</div>
+			<div class="tab-content-box mt40 mt-lg-30">
+				<div class="content active">
+					<div class="item-info-box">
+						<ul>
+							<li>
+								<b>제조사</b>
+								<p>언더독</p>
+							</li>
+							<li>
+								<b>케이스</b>
+								<p>고급 세무케이스</p>
+							</li>
+							<li>
+								<b>작업방식</b>
+								<p>음각 작업 후 잉크 수작업</p>
+							</li>
+						</ul>
+					</div>
+					<div class="item-detail-box mt24">
+						<img src="./asset/images/test2.png">
+						<a href="javascript:;" class="more">VIEW MORE +</a>
+					</div>
+					<div class="mt80 mt-lg-40">
+						<div class="title-box mb16">
+							<h2>상품 준비 절차</h2>
+						</div>
+						<div class="order-step-box">
+							<ul>
+								<li class="full on">
+									<strong>01. 제품선택</strong>
+									<p>
+										장인의상패에는 다양한 상품이 준비되어 있습니다. <br>
+										용도와 금액대, 재질별로 검색이 가능하니 편리하게 원하시는 상품을 찾아보세요.
+									</p>
+								</li>
+								<li>
+									<strong>02. 문구작성</strong>
+									<p>
+										상품의 문구를 작성해주세요. 작성이 어려우실 시 <br> 
+										'문구 추천' 기능을 이용해보세요!
+									</p>
+								</li>
+								<li>
+									<strong>03. 결제하기</strong>
+									<p>
+										다양한 결제 수단을 이용해서 결제해주세요. <br>
+										세금계산서 및 현금영수증도 제공받을 수 있어요.
+									</p>
+								</li>
+								<li>
+									<strong>04. 시안확인</strong>
+									<p>
+										성한 문구를 바탕으로 담당 디자이너가 시안 작업을 진행합니다. <br>
+										상패 제작 후에는 수정이 불가하니 시안을 신중히 확인해주세요.
+									</p>
+								</li>
+								<li>
+									<strong>05. 상품 제작 및 출고</strong>
+									<p>
+										상품을 제작하여 안전하게 2중 포장 후 택배, 퀵 서비스, <br>
+										직접 방문 등의 서비스를 제공하고 있습니다. <br>
+										(퀵서비스의 경우 추가요금이 발생될 수 있습니다.)
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="title-box mb16">
+						<h2>상품 후기</h2>
+					</div>
+					<div class="review-list-box">
+						<div class="list-top">
+							<ul>
+								<li><a href=""><img src="./asset/images/test.png"></a></li>
+								<li><a href=""><img src="./asset/images/test.png"></a></li>
+								<li><a href=""><img src="./asset/images/test.png"></a></li>
+								<li><a href=""><img src="./asset/images/test.png"></a></li>
+								<li><a href=""><img src="./asset/images/test.png"></a></li>
+								<li><a href=""><img src="./asset/images/test.png"></a></li>
+								<li class="more"><a href=""><p>더보기</p></a></li>
+							</ul>
+						</div>
+						<div class="list-head">
+							<div class="filter-box icon">
+								<ul>
+									<li class="active"><a href="">베스트순</a></li>
+									<li><a href="">최신순</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="list-body">
+							<ul>
+								<li>
+									<div class="list-image">
+										<a href="" class="inner">
+											<img src="./asset/images/test.png">
+										</a>
+									</div>
+									<div class="list-content">
+										<dl>
+											<dd><b>언더독</b></dd>
+											<dd>2024.00.00</dd>
+										</dl>
+										<p>
+											주문한 상패 잘 받았습니다.<br>
+											납기, 배송 만족합니다<br>
+											다음에 기회가 되면 다시 이용하고 주변에 홍보하겠습니다.
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="list-content">
+										<dl>
+											<dd><b>언더독</b></dd>
+											<dd>2024.00.00</dd>
+										</dl>
+										<p>
+											주문한 상패 잘 받았습니다.<br>
+											납기, 배송 만족합니다<br>
+											다음에 기회가 되면 다시 이용하고 주변에 홍보하겠습니다.
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="paging-box">
+						<ul>
+							<li class="prev"><a href="">이전</a></li>
+							<li class="active"><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+							<li class="next"><a href="">다음</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="content">
+					<div class="title-box mb16">
+						<h2>교환 및 반품 안내</h2>
+					</div>
+					<div class="table-text-box">
+						<ul>
+							<li>
+								<b>판매자 택배사</b>
+								<div>
+									<p>롯데택배</p>
+								</div>
+							</li>
+							<li>
+								<b>교환/반품 택배비</b>
+								<div>
+									<p>
+										반품시 편도 3,000원 (최초 배송비 무료인 경우 6,000원)<br>
+										상품 불량 및 오배송 등의 이유로 반품하실 경우, 반품 배송비는 무료입니다.<br>
+										단순변심 및 고객의 사정으로 반품/교환 하실 경우, 배송비는 고객님의 부담입니다.<br> 
+										(단순변심 및 고객의 사정으로 반품/교환시 택배비는 주문 건수가 아닌 택배 박스당 6천원이 발생합니다)
+									</p>
+								</div>
+							</li>
+							<li>
+								<b>교환/반품 배송지</b>
+								<div>
+									<p>서울특별시 중구 마른내로 61-1, 2층 206호(안현동1가)</p>
+								</div>
+							</li>
+							<li>
+								<b>반품/교환 사유에 <br>따른 요청 가능 기간</b>
+								<div>
+									<p>
+										- 구매자 단순 변심은 수령 후 7일 이내 (구매자 반품배송비 부담)<br>
+										- 표시/광고와 상이, 상품하자의 경우 수령 후 3개월 이내 혹은 표시/광고와 다른 사실을 안 날로부터 30일 이내<br>
+										(판매자 반품 배송비 부담) 둘 중 하나 경과 시 반품/교환 불가
+									</p>
+								</div>
+							</li>
+							<li>
+								<b>반품/교환 불가능<br>사유</b>
+								<div>
+									<p>
+										1. 반품요청기간이 지난 경우<br>
+										2. 구매자의 책임있는 사유로 상품 등이 멸실 또는 훼손된 경우 (단, 상품의 내용을 확인하기 위하여 포장 등을 훼손한 경우는 제외)<br>
+										3. 구매자의 책임있는 사유로 포장이 훼손되어 상품 가치가 현저히 상실된 경우<br>
+										4. 구매자의 사용 또는 일부 소비에 의하여 상품의 가치가 현저히 감소한 경우<br>
+										5. 시간의 경과에 의하여 재판매가 곤란할 정도로 상품 등의 가치가 현저히 감소한 경우<br>
+										6. NFT 오픈 후 단순 변심으로 반품 요청한 경우
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="title-box mt80 mt-lg-40 mb16">
+						<h2>판매자 안내</h2>
+					</div>
+					<div class="table-text-box">
+						<ul>
+							<li>
+								<b>상호명</b>
+								<div>
+									<p>언더독</p>
+								</div>
+							</li>
+							<li>
+								<b>대표자</b>
+								<div>
+									<p>김수철</p>
+								</div>
+							</li>
+							<li>
+								<b>사업자등록번호</b>
+								<div>
+									<p>-</p>
+								</div>
+							</li>
+							<li>
+								<b>통신판매업번호</b>
+								<div>
+									<p>2023-서울강동-0202</p>
+								</div>
+							</li>
+							<li>
+								<b>사업장소재지</b>
+								<div>
+									<p>서울특별시 중구 마른내로 61-1, 2층 206호(안현동1가)</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer-top">
+				<div class="footer-top-left">
+					<h2><img src="./asset/images/logo.png"></h2>
+					<ul>
+						<li><a href="">주문방법</a></li>
+						<li><a href="">제작기간</a></li>
+						<li><a href="">케이스</a></li>
+						<li><a href="">문구추천</a></li>
+						<li><a href="">질문과답변</a></li>
+					</ul>
+				</div>
+				<div class="footer-top-center">
+					<div class="top-center-cate">
+						<ul>
+							<li><a href="">이용약관</a></li>
+							<li><a href="">개인정보처리방침</a></li>
+							<li><a href="">자주묻는질문</a></li>
+							<li><a href="">견적요청</a></li>
+							<li><a href="">주문서받기</a></li>
+						</ul>
+					</div>
+					<div class="top-center-info">
+						<ul>
+							<li>회사명 : 언더독</li>
+							<li>대표자명 : 김수철</li>
+							<li>주소 : 서울특별시 중구 마른내로 61-1, 2층 206호(안현동1가)</li>
+							<li>사업자 등록번호 : </li>
+							<li>통신판매번호 2023-서울강동-0202</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-top-right">
+					<strong>0000-0000</strong>
+					<p>장인의상패@이메일</p>
+					<small>월요일 - 금요일 09:00~18:00</small>
+					<small>토/일/공휴일은 휴무입니다</small>
+					<ul>
+						<li class="blog"><a href="" target="_blank">블로그</a></li>
+						<li class="instagram"><a href="" target="_blank">인스타그램</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>Copyright 언더독 컴퍼니.All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<script src="./asset/js/swiper.js"></script>
+</body>
+</html>

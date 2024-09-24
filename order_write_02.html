@@ -1,0 +1,579 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="robots" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">  
+	<meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover">
+	<link href="" rel="icon" type="image/jpg">
+	<link href="" rel="shortcut icon" type="image/jpg">
+	<link href="" rel="apple-touch-icon" type="image/jpg">				
+	<link rel="stylesheet" type="text/css" href="./asset/css/swiper.min.css"> 
+	<link rel="stylesheet" type="text/css" href="./asset/css/base.css"> 
+	<link rel="stylesheet" type="text/css" href="./asset/css/grid.css"> 
+	<link rel="stylesheet" type="text/css" href="./asset/css/common.css?a=1"> 
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="./asset/js/swiper.min.js"></script>	
+	<script src="./asset/js/common.js"></script>
+</head>
+<body>
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="header-top-logo">
+					<h1><a href=""><img src="./asset/images/logo.png"></a></h1>
+				</div>
+				<div class="header-top-member">
+					<ul>
+						<li><a href="">로그인</a></li>
+						<li><a href="">회원가입</a></li>
+						<li><a href="">검색</a></li>
+						<li><a href="">장바구니</a></li>
+						<li><a href="">마이페이지<span>시안확인</span></a></li>
+					</ul>
+					<a href="javascript:;" onclick="menuOpen();" class="menu">메뉴바</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="header-bottom-cate">
+					<a href="javascript:;" class="all" onclick="menuOpen();">전체 카테고리</a>
+					<ul>
+						<li><a href="">감사패</a></li>
+						<li><a href="">트로피</a></li>
+						<li><a href="">싱글패</a></li>
+						<li><a href="">이글패</a></li>
+						<li><a href="">홀인원</a></li>
+						<li><a href="">교회</a></li>
+						<li><a href="">명패</a></li>
+						<li><a href="">기타</a></li>
+					</ul>
+				</div>
+				<div class="header-bottom-link">
+					<ul>
+						<li><a href="">견적상담</a></li>
+						<li><a href="">주문서 다운로드</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header-fixed">
+			<div class="box">
+				<div class="header-fixed-button">
+					<a href="javascript:;" onclick="rightToggle();">토글</a>
+				</div>
+				<div class="header-fixed-body">
+					<h2>주문도우미</h2>
+					<div class="fixed-body-cate">
+						<ul>
+							<li><a href=""><p>문구추천</p></a></li>
+							<li><a href=""><p>장바구니</p></a></li>
+							<li><a href=""><p>맞춤결제</p></a></li>
+							<li><a href=""><p>카드증빙</p></a></li>
+							<li><a href=""><p>배송조회</p></a></li>
+							<li class="kakao"><a href=""><p>실시간 문의</p></a></li>
+						</ul>
+					</div>
+					<div class="fixed-body-cs">
+						<strong>0000-0000</strong>
+						<p>장인의상패@이메일</p>
+						<small>월요일 - 금요일 09:00~18:00</small>
+						<small>토/일/공휴일은 휴무입니다</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-all">
+			<div class="box">
+				<div class="all-head">
+					<a href="javascript:;" onclick="menuClose();">닫기</a>
+				</div>
+				<div class="all-body">
+					<div class="all-body-member">
+						<ul>
+							<li><a href="">로그인</a></li>
+							<li><a href="">회원가입</a></li>
+							<li><a href="">검색</a></li>
+							<li><a href="">장바구니</a></li>
+							<li><a href="">마이페이지</a></li>
+						</ul>
+					</div>
+					<div class="all-body-cate">
+						<h2>카테고리</h2>
+						<ul>
+							<li><a href="">감사패</a></li>
+							<li><a href="">트로피</a></li>
+							<li><a href="">싱글패</a></li>
+							<li><a href="">이글패</a></li>
+							<li><a href="">홀인원</a></li>
+							<li><a href="">교회</a></li>
+							<li><a href="">명패</a></li>
+							<li><a href="">기타</a></li>
+							<li><a href="">견적상담</a></li>
+							<li><a href="">주문서 다운로드</a></li>
+						</ul>
+					</div>
+					<div class="all-body-my">
+						<h2>언더독 님</h2>
+						<ul>
+							<li>
+								<a href="">쇼핑정보</a>
+								<button type="button">쇼핑정보</button>
+								<dl>
+									<dd><a href="">주문내역/배송조회</a></dd>
+									<dd><a href="">시안확인</a></dd>
+									<dd><a href="">장바구니</a></dd>
+									<dd><a href="">취소/교환 내역</a></dd>
+									<dd><a href="">나의 리뷰</a></dd>
+								</dl>
+							</li>
+							<li>
+								<a href="">내 정보</a>
+								<button type="button">내 정보</button>
+								<dl>
+									<dd><a href="">회원정보수정</a></dd>
+									<dd><a href="">배송지관리</a></dd>
+									<dd><a href="">포인트/쿠폰</a></dd>
+								</dl>
+							</li>
+							<li>
+								<a href="">고객센터</a>
+								<button type="button">고객센터</button>
+								<dl>
+									<dd><a href="">문의내역</a></dd>
+									<dd><a href="">자주묻는질문</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container sm">
+			<div class="step-title-box">
+				<ul>
+					<li><div>01 <b>문구작성</b></div></li>
+					<li class="active"><div>02 <b>결제정보입력</b></div></li>
+					<li><div>03 <b>결제완료</b></div></li>
+				</ul>
+			</div>
+			<div class="table-box mt80 mt-lg-30">
+				<div class="table-body">
+					<table>
+						<thead>
+							<tr>
+								<th class="subject">상품정보</th>
+								<th>적립금</th>
+								<th>주문금액</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="subject">
+									<div class="table-image-box lg">
+										<a href="" class="inner">
+											<div class="image">
+												<img src="./asset/images/img_table_image.png">
+											</div>
+											<div class="content">
+												<p>크리스탈 명패 UN2839</p>
+												<dl>
+													<dd>스틸(기본</dd>
+													<dd>230,000원</dd>
+												</dl>
+											</div>
+										</a>
+									</div>
+								</td>
+								<td class="fw7">23,000 적립</td>
+								<td class="fw7">230,000원</td>
+							</tr>
+							<tr>
+								<td class="subject">
+									<div class="table-image-box lg">
+										<a href="" class="inner">
+											<div class="image">
+												<img src="./asset/images/img_table_image.png">
+											</div>
+											<div class="content">
+												<p>크리스탈 명패 UN2839</p>
+												<dl>
+													<dd>스틸(기본</dd>
+													<dd>230,000원</dd>
+												</dl>
+											</div>
+										</a>
+									</div>
+								</td>
+								<td class="fw7">23,000 적립</td>
+								<td class="fw7">230,000원</td>
+							</tr>
+							<tr>
+								<td class="subject">
+									<div class="table-image-box lg">
+										<a href="" class="inner">
+											<div class="image">
+												<img src="./asset/images/img_table_image.png">
+											</div>
+											<div class="content">
+												<p>크리스탈 명패 UN2839</p>
+												<dl>
+													<dd>스틸(기본</dd>
+													<dd>230,000원</dd>
+												</dl>
+											</div>
+										</a>
+									</div>
+								</td>
+								<td class="fw7">23,000 적립</td>
+								<td class="fw7">230,000원</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="mt80 mt-lg-40">
+				<div class="title-box mb16">
+					<h2>주문자 정보</h2>
+				</div>
+				<div class="write-box">
+					<ul>
+						<li>
+							<strong>주문자 명</strong>
+							<div>
+								<div class="input-box mx560">
+									<input type="text" placeholder="주문자명을 작성해주세요.">
+								</div>
+							</div>
+						</li>
+						<li>
+							<strong>휴대폰</strong>
+							<div>
+								<div class="flex flex-vc mx560">
+									<div class="input-box flex-1 mr4">
+										<input type="text" placeholder="">
+									</div>
+									<div class="input-box flex-1 mr4">
+										<input type="text" placeholder="">
+									</div>
+									<div class="input-box flex-1">
+										<input type="text" placeholder="">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<strong>주소</strong>
+							<div>
+								<div class="flex flex-vc">
+									<div class="input-box readonly col-12 mx560 flex-lg-1">
+										<input type="text" value="" placeholder="주소찾기를 이용해주세요." readonly="">
+									</div>
+									<div class="button-box ml8 w120 w-lg-80">
+										<a href="" class="btn btn-bd-black h40 flex-1 px0">주소 찾기</a>
+									</div>
+								</div>
+								<div class="input-box readonly mx560 mt5">
+									<input type="text" value="주소" readonly="">
+								</div>
+								<div class="input-box mx560 mt5">
+									<input type="text" value="상세주소">
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mt80 mt-lg-40">
+				<div class="title-box mb16">
+					<h2>배송지 정보</h2>
+				</div>
+				<div class="write-box">
+					<ul>
+						<li class="py20 py-lg-10">
+							<strong>배송지 정보</strong>
+							<div>
+								<div class="flex flex-vc">
+									<p class="f17 f-lg-15 col-lg-12 mr24 mr-lg-0 mb-lg-10">주문고객 정보와 동일합니다.</p>
+									<div class="radio-box mr32 mr-lg-15">
+										<input type="radio" name="radio" id="radio01">
+										<label for="radio01">예</label>
+									</div>
+									<div class="radio-box">
+										<input type="radio" name="radio" id="radio02">
+										<label for="radio02">아니오</label>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<strong>수취인 명</strong>
+							<div>
+								<div class="input-box">
+									<input type="text" placeholder="수취인 명을 작성해주세요.">
+								</div>
+							</div>
+						</li>
+						<li>
+							<strong>주소</strong>
+							<div>
+								<div class="flex flex-vc">
+									<div class="input-box readonly col-12 mx560 flex-lg-1">
+										<input type="text" value="" placeholder="주소찾기를 이용해주세요." readonly="">
+									</div>
+									<div class="button-box ml8 w120 w-lg-80">
+										<a href="" class="btn btn-bd-black h40 flex-1 px0">주소 찾기</a>
+									</div>
+								</div>
+								<div class="input-box readonly mx560 mt5">
+									<input type="text" value="주소" readonly="">
+								</div>
+								<div class="input-box mx560 mt5">
+									<input type="text" value="상세주소">
+								</div>
+							</div>
+						</li>
+						<li>
+							<strong>배송시 요청사항</strong>
+							<div>
+								<div class="textarea-box sm mx560">
+									<textarea placeholder="배송 시 요청사항을 작성해주세요."></textarea>
+								</div>
+							</div>
+						</li>
+						<li>
+							<strong>택배 방법</strong>
+							<div>
+								<div class="flex flex-vc">
+									<div class="radio-box mr32 mr-lg-15">
+										<input type="radio" name="radio01" id="radio01_01">
+										<label for="radio01_01">택배(무료)</label>
+									</div>
+									<div class="radio-box mr32 mr-lg-15">
+										<input type="radio" name="radio01" id="radio01_02">
+										<label for="radio01_02">퀵서비스</label>
+									</div>
+									<div class="radio-box">
+										<input type="radio" name="radio01" id="radio01_03">
+										<label for="radio01_03">직접방문</label>
+									</div>
+								</div>
+								<div class="title-box mt10">
+									<p>사업장 주소 : 서울특별시 중구 마른내로 61-1, 2층 206호(안현동1가)</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mt80 mt-lg-40">
+				<div class="title-box mb16">
+					<h2>결제 방법</h2>
+				</div>
+				<div class="write-box">
+					<ul>
+						<li>
+							<strong>마일리지</strong>
+							<div>
+								<div class="flex flex-vc">
+									<div class="input-box col-12 mx560 flex-lg-1">
+										<input type="text" placeholder="사용금액을 입력해주세요.">
+									</div>
+									<div class="button-box ml8 w120 w-lg-80">
+										<a href="" class="btn btn-bd-black h40 flex-1 px0">모두 사용</a>
+									</div>
+									<p class="ml40 ml-lg-0 mt-lg-10 col-lg-12 fw6 f17 f-lg-15">사용가능 24,650P</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<strong>결제방법</strong>
+							<div>
+								<div class="sca-box">
+									<ul>
+										<li class="active"><a href="" class="bdr4">신용카드</a></li>
+										<li><a href="" class="bdr4">무통장입금</a></li>
+										<li><a href="" class="bdr4">에스크로 결제</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<strong>현금영수증</strong>
+							<div>
+								<div class="flex flex-vc">
+									<div class="radio-box mr32 mr-lg-15">
+										<input type="radio" name="radio02" id="radio02_01">
+										<label for="radio02_01">개인</label>
+									</div>
+									<div class="radio-box mr32 mr-lg-15">
+										<input type="radio" name="radio02" id="radio02_02">
+										<label for="radio02_02">사업자</label>
+									</div>
+									<div class="radio-box">
+										<input type="radio" name="radio02" id="radio02_03">
+										<label for="radio02_03">신청안함</label>
+									</div>
+								</div>
+								<div class="input-box mx560 mt8">
+									<input type="text" placeholder="사업자등록번호를 작성해주세요.">
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mt80 mt-lg-40">
+				<div class="title-box mb16">
+					<h2>쿠폰 적용</h2>
+				</div>
+				<div class="write-box">
+					<ul>
+						<li>
+							<strong>쿠폰 적용</strong>
+							<div>
+								<div class="flex flex-vc">
+									<div class="input-box col-12 mx560 flex-lg-1">
+										<input type="text" placeholder="사용가능한 쿠폰이 있습니다">
+									</div>
+									<div class="button-box ml8 w120 w-lg-90">
+										<a href="" class="btn btn-bd-black h40 flex-1 px0">쿠폰조회/적용</a>
+									</div>
+									<p class="ml40 ml-lg-0 mt-lg-10 col-lg-12 fw6 f17 f-lg-15">사용가능 2장</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="text-list-box mt10 pt0 bt0">
+					<ul>
+						<li><p>할인 쿠폰별 적용 대상 상품이 다를 수 있으며, 적용 대상 상품의 범위는 당사 사정에 따라 사전고지 없이 변동될 수 있습니다.</p></li>
+						<li><p>주문 후 반품/환불/취소의 경우 사용하신 쿠폰은 소멸됩니다.</p></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mt80 mt-lg-40">
+				<div class="title-box mb16">
+					<h2>결제 정보</h2>
+				</div>
+				<div class="order-price-box">
+					<div class="list">
+						<ul>
+							<li>
+								<div class="price-list">
+									<dl>
+										<dd>
+											<b>주문금액</b>
+											<div>
+												<p>1,760,000원</p>
+											</div>
+										</dd>
+										<dd>
+											<b>상품할인</b>
+											<div>
+												<p>880,000원</p>
+											</div>
+										</dd>
+										<dd>
+											<b class="point">마일리지</b>
+											<div>
+												<p><b>-10,000원</b></p>
+											</div>
+										</dd>
+										<dd>
+											<b class="coupon">신규고객 10%할인 쿠폰</b>
+											<div>
+												<p><b>-56,000원</b></p>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<div class="price-total">
+									<strong>결제금액</strong>
+									<div>
+										<b>880,000원</b>
+										<dl>
+											<dd>카드결제</dd>
+											<dd>국민카드</dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="step-button-box mt90 mt-lg-50">
+				<a href="" class="prev">이전</a>
+				<a href="" class="next">결제하기</a>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer-top">
+				<div class="footer-top-left">
+					<h2><img src="./asset/images/logo.png"></h2>
+					<ul>
+						<li><a href="">주문방법</a></li>
+						<li><a href="">제작기간</a></li>
+						<li><a href="">케이스</a></li>
+						<li><a href="">문구추천</a></li>
+						<li><a href="">질문과답변</a></li>
+					</ul>
+				</div>
+				<div class="footer-top-center">
+					<div class="top-center-cate">
+						<ul>
+							<li><a href="">이용약관</a></li>
+							<li><a href="">개인정보처리방침</a></li>
+							<li><a href="">자주묻는질문</a></li>
+							<li><a href="">견적요청</a></li>
+							<li><a href="">주문서받기</a></li>
+						</ul>
+					</div>
+					<div class="top-center-info">
+						<ul>
+							<li>회사명 : 언더독</li>
+							<li>대표자명 : 김수철</li>
+							<li>주소 : 서울특별시 중구 마른내로 61-1, 2층 206호(안현동1가)</li>
+							<li>사업자 등록번호 : </li>
+							<li>통신판매번호 2023-서울강동-0202</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-top-right">
+					<strong>0000-0000</strong>
+					<p>장인의상패@이메일</p>
+					<small>월요일 - 금요일 09:00~18:00</small>
+					<small>토/일/공휴일은 휴무입니다</small>
+					<ul>
+						<li class="blog"><a href="" target="_blank">블로그</a></li>
+						<li class="instagram"><a href="" target="_blank">인스타그램</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>Copyright 언더독 컴퍼니.All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<script src="./asset/js/swiper.js"></script>
+</body>
+</html>
