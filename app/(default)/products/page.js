@@ -11,7 +11,7 @@ import { actions } from "@/app/store";
 import Pagination from "@/components/Pagination";
 
 // api
-import productApi from "@/lib/api/product";
+import productApi from "@/lib/api/productApi";
 
 export default function Page() {
     const router = useRouter();

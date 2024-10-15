@@ -8,8 +8,49 @@ import Error from "@/components/Error";
 import {useDispatch} from "react-redux";
 import {actions} from "@/app/store";
 
+// api
+import bannerApi from "@/lib/api/bannerApi";
+
 
 export default function Start() {
+
+    const [mainBanners, setMainBanners] = useState([]);
+    const [categoryBanners, setCategoryBanners] = useState([]);
+    const [middleBanners, setMiddleBanners] = useState([]);
+    const [ribbonBanners, setRibbonBanners] = useState([]);
+
+    function getMainBanners() {
+        bannerApi.index({ type: "1" }, (response) => {
+            setMainBanners(response.data.data);
+        });
+    }
+    
+    function getCategoryBanners() {
+        bannerApi.index({ type: "2" }, (response) => {
+            setCategoryBanners(response.data.data);
+        });
+    }
+    
+    function getMiddleBanners() {
+        bannerApi.index({ type: "3" }, (response) => {
+            setMiddleBanners(response.data.data);
+        });
+    }
+    
+    function getRibbonBanners() {
+        bannerApi.index({ type: "4" }, (response) => {
+            setRibbonBanners(response.data.data);
+        });
+    }
+    
+    useEffect(() => {
+        getMainBanners();
+        getCategoryBanners();
+        getMiddleBanners();
+        getRibbonBanners();
+    }, []);
+
+
     
     return (
         <section>
@@ -17,24 +58,14 @@ export default function Start() {
                 <div className="main-swiper-box">
                     <div className="swiper-container">
                         <ul className="swiper-wrapper">
-                            <li className="swiper-slide">
-                                <img
-                                    src="/image/img_main_swiper_01.png"
-                                    alt="Slide 1"
-                                />
-                            </li>
-                            <li className="swiper-slide">
-                                <img
-                                    src="/image/img_main_swiper_01.png"
-                                    alt="Slide 2"
-                                />
-                            </li>
-                            <li className="swiper-slide">
-                                <img
-                                    src="/image/img_main_swiper_01.png"
-                                    alt="Slide 3"
-                                />
-                            </li>
+                            {mainBanners.map((mainBanner, index) => (
+                                <li key={index} className="swiper-slide">
+                                    <img
+                                        src={mainBanner.url}  // banner의 이미지 URL 속성을 사용하세요
+                                        alt={`Slide ${mainBanner + 1}`} // Alt 속성에 슬라이드 번호를 동적으로 추가
+                                    />
+                                </li>
+                            ))}
                         </ul>
                     </div>
                     <div className="swiper-control">
@@ -152,21 +183,16 @@ export default function Start() {
                         <div className="find-left">
                             <div className="swiper-container">
                                 <ul className="swiper-wrapper">
-                                    {Array(3)
-                                        .fill(null)
-                                        .map((_, index) => (
-                                            <li
-                                                key={index}
-                                                className="swiper-slide"
-                                            >
-                                                <Link
-                                                    href="#"
-                                                    style={{
-                                                        backgroundImage: `url('/image/img_main_find.png')`,
-                                                    }}
-                                                ></Link>
-                                            </li>
-                                        ))}
+                                    {categoryBanners.map((categoryBanner, index) => (
+                                        <li key={index} className="swiper-slide">
+                                            <Link
+                                                href="#"
+                                                style={{
+                                                    backgroundImage: `url(${categoryBanner.url})`, // API에서 제공되는 이미지 URL 사용
+                                                }}
+                                            ></Link>
+                                        </li>
+                                    ))}
                                 </ul>
                                 <div className="swiper-button-prev"></div>
                                 <div className="swiper-button-next"></div>
@@ -265,30 +291,26 @@ export default function Start() {
                 <div className="mt80 mt-lg-50">
                     <div className="main-banner-box">
                         <ul>
-                            <li>
-                                <Link href="#">
-                                    <img
-                                        src="/image/img_main_banner_01.png"
-                                        alt="Banner 1"
-                                    />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    <img
-                                        src="/image/img_main_banner_02.png"
-                                        alt="Banner 2"
-                                    />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    <img
-                                        src="/image/img_main_banner_03.png"
-                                        alt="Banner 3"
-                                    />
-                                </Link>
-                            </li>
+                            {middleBanners.map((middleBanner, index) => (
+                                <li key={index}>
+                                    <Link href="#">
+                                        <img
+                                            src={middleBanner.url}  // API에서 제공되는 이미지 URL 사용
+                                            alt={`Banner ${index + 1}`}  // 동적으로 Banner 번호 지정
+                                        />
+                                    </Link>
+                                </li>
+                            ))}
+                            {ribbonBanners.map((ribbonBanner, index) => (
+                                <li key={index}>
+                                    <Link href="#">
+                                        <img
+                                            src={ribbonBanner.url}  // API에서 제공되는 이미지 URL 사용
+                                            alt={`Banner ${index + 1}`}  // 동적으로 Banner 번호 지정
+                                        />
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>

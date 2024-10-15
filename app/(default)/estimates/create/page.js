@@ -9,7 +9,7 @@ import {useDispatch} from "react-redux";
 import {actions} from "@/app/store";
 
 // api
-import estimate from "@/lib/api/estimate";
+import estimate from "@/lib/api/estimateApi";
 
 
 export default function Page() {
