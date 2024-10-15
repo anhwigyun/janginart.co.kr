@@ -288,6 +288,66 @@ export default function Start() {
                     </div>
                 </div>
 
+
+                <div className="mt80 mt-lg-50">
+                    <div className="title-box mb24">
+                        <h2 className="tc">상품 카테고리</h2>
+                    </div>
+                    <div className="main-category-box">
+                        <ul>
+                            <li>
+                                <Link href="">
+                                    <div className="list-image">
+                                        <img
+                                            src="" // 실제 이미지 경로로 수정 필요
+                                            alt="카테고리 이미지 1"
+                                            width={500}
+                                            height={300}
+                                        />
+                                    </div>
+                                    <div className="list-content">
+                                        <p>변함없는 감사한 마음을 <br />변함없이 오래도록</p>
+                                        <small>MD가 추천하는 베스트 감사패 모음</small>
+                                    </div>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="">
+                                    <div className="list-image">
+                                        <img
+                                            src="" // 실제 이미지 경로로 수정 필요
+                                            alt="카테고리 이미지 2"
+                                            width={500}
+                                            height={300}
+                                        />
+                                    </div>
+                                    <div className="list-content">
+                                        <p>노력의 결실을 오래 기억하도록 <br />당신의 노력을 응원합니다</p>
+                                        <small>트로피 · 싱글패 · 이글패 · 홀인원 · 메달 · 깃</small>
+                                    </div>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="">
+                                    <div className="list-image">
+                                        <img
+                                            src="" // 실제 이미지 경로로 수정 필요
+                                            alt="카테고리 이미지 3"
+                                            width={500}
+                                            height={300}
+                                        />
+                                    </div>
+                                    <div className="list-content">
+                                        <p>당신의 새로운 시작을 <br />응원합니다</p>
+                                        <small>다양한 직군을 위한 명패모음</small>
+                                    </div>
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
                 <div className="mt80 mt-lg-50">
                     <div className="main-banner-box">
                         <ul>
