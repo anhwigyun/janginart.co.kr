@@ -191,6 +191,7 @@ export default function Page() {
                                     className="btn btn-black radius sm"
                                     onClick={(e) => {
                                         e.preventDefault(); // a 태그의 기본 동작 방지
+                                        setForm({ ...form, page: 1 });
                                         getProducts(); // 함수 호출
                                     }}
                                 >
