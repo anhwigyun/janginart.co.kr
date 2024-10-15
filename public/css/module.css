@@ -1,0 +1,82 @@
+.m-input-error.type01 {
+    margin-top:8px;
+    font-size:14px; color:red;
+}
+
+.m-pop.type01 {
+    display: flex; align-items: center; justify-content: center;
+    width:100%; height:100%;
+    position:fixed; top:0; left:0;
+    z-index:10000;
+    background-color:rgba(0,0,0,0.7);
+}
+.m-pop.type01 .m-pop-inner {
+    width:300px; padding:20px; padding-top:40px;
+    background-color:#fff;
+    border-radius:10px;
+}
+.m-pop.type01 .m-pop-description {
+    text-align: center; font-size:18px; font-weight:500;
+}
+.m-pop.type01 .m-pop-btns {
+    display: flex; align-items: center; justify-content: center;
+    margin-top:20px;
+}
+.m-pop.type01 .m-pop-btn {
+    padding:12px 24px;
+    font-size:16px;
+    background-color:#0075A9;
+    color:#fff;
+    border-radius:5px;
+}
+
+.m-input-coords.type01 {}
+.m-input-coords.type01 .m-input-coord-wrap {
+    display: flex; gap:16px;
+    margin-top:12px;
+}
+.m-input-coords.type01 .m-input-coord-wrap:first-of-type {
+    margin-top:0;
+}
+.m-input-coords.type01 .btn-add {
+    padding:0 12px;
+    background-color:black; color:#fff;
+    border-radius:10px;
+}
+.m-input-coords.type01 .m-input-coord {
+    display: flex; gap:8px;
+}
+
+
+
+/* 페이지네이션 */
+.m-pagination.type01 {
+    margin-top: 55px;
+}
+.m-pagination.type01 .m-pages {
+    display: flex; justify-content: center;
+    margin:-4px;
+}
+.m-pagination.type01 .m-page-wrap {
+    padding:4px;
+}
+.m-pagination.type01 .m-page {
+    display: flex; align-items: center; justify-content: center;
+    width:30px; height:30px;
+    font-size:14px;
+    background-color:#fff; color:rgb(120, 130, 157);
+    border-radius:5px;
+    transition: all .3s;
+}
+.m-pagination.type01 .m-page:hover {
+    transform:translate(-4px, -4px);
+    box-shadow:0px 3px 6px rgb(0,0,0,0.16);
+}
+.m-pagination.type01 .m-page i {
+    margin:0 -4px;
+    font-size:14px; color:rgb(120, 130, 157);
+}
+.m-pagination.type01 .m-page.active {
+    background-color:#3e97fe; color:#fff;
+
+}

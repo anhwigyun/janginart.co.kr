@@ -1742,7 +1742,7 @@
 .pt-xl-96 {padding-top:var(--pixel-96) !important;}
 .pt-xl-98 {padding-top:var(--pixel-98) !important;}
 .pt-xl-100 {padding-top:var(--pixel-100) !important;}}
-}  
+
 @media (max-width:991px){
 .pt-lg-0 {padding-top:var(--pixel-0) !important;}
 .pt-lg-1 {padding-top:var(--pixel-1) !important;}
@@ -1812,7 +1812,7 @@
 .pt-lg-96 {padding-top:var(--pixel-96) !important;}
 .pt-lg-98 {padding-top:var(--pixel-98) !important;}
 .pt-lg-100 {padding-top:var(--pixel-100) !important;}}
-}
+
 @media (max-width:767px){
 .pt-md-0 {padding-top:var(--pixel-0) !important;}
 .pt-md-1 {padding-top:var(--pixel-1) !important;}
